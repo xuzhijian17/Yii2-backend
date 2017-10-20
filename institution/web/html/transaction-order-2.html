@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1, minimum-scale=1,target-densitydpi=device-width" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link href="../css/institution.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/institution.js"></script>
+	<title>交易下单</title>
+</head>
+<body>
+	<div class="container">
+		<!--登陆前-->
+		<!--<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<a href="login.html" class="linkT1">登陆</a>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+				</div>
+			</div>
+		</header>-->
+		<!--登陆前结束-->
+		<!--登陆后-->
+		<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<span class="welcome"><i class="ico icoWel"></i>欢迎您！华夏证券</span>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+					<div class="nav">
+						<ul>
+							<li><a href="query.html" class="navLink">持仓查询</a></li>
+							<li><a href="product.html" class="navLink">产品市场</a></li>
+							<li class="dropMenu">
+								<span class="navLink cur">
+									交易
+								</span>
+								<span class="subMenu">
+									<a href="transaction-order.html" class="subLink">交易下单</a>
+									<a href="transaction-query.html" class="subLink">交易查询</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--登陆后结束-->
+		<div class="main">
+			<div class="Side">
+				<div class="leftBar">
+					<div class="userWarp">
+						<div class="photo"><img src="../images/photo.jpg" alt=""/></div>
+						<div class="userName">
+							<span class="dpyIB">交易员</span>
+							<span class="dpyIB">张三</span>
+						</div>
+						<div class="fixed">
+							<a href="javascript:void(0);" class="icoRound icoUser"></a>
+							<a href="javascript:void(0);" class="icoRound icoCo"></a>
+							<a href="javascript:void(0);" class="icoRound icoset"></a>
+						</div>
+					</div>
+					<!--userWarp end-->
+					<div class="subNav">
+						<ul>
+							<li><a href="query.html" class="subA">持仓查询<i class="ico icoR"></i></a></li>
+							<li><a href="product.html" class="subA">产品市场<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-order.html" class="subA cur">交易下单<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-query.html" class="subA">交易查询<i class="ico icoR"></i></a></li>
+							<li><a href="message.html" class="subA">消息中心<i class="ico icoR"></i></a></li>
+							<li><a href="open-account.html" class="subA">机构开户<i class="ico icoR"></i></a></li>
+							<li><a href="authority-management.html" class="subA">权限管理<i class="ico icoR"></i></a></li>
+						</ul>
+					</div>
+					<!--subNav end-->
+				</div>
+				<!--leftBar end-->
+				<div class="rightBar">
+					<div class="content">
+						<div class="newestNotice slideDown">
+							<span class="close">X</span>
+							<span class="date">2016-02-24</span>
+							<span class="horn">最新公告：春节期间基金申购赎回、小金库快赎业务公告</span> 
+						</div>
+						<!--newestNotice end-->
+						<div class="pT10">
+							<div class="titBlk">
+								<div class="titlist tabTag">
+									<ul>
+										<li class="cur"><span class="tabOption">未下单</span></li>
+										<li><span class="tabOption">已下单</span></li>
+									</ul>
+								</div>
+								<i class="curLine"></i>
+								<div class="select">
+									<div class="sltLabel"><span class="sltT">全部<i class="ico icoDown"></i></span></div>
+									<div class="sltOption">
+										<ul>
+											<li>产品-资产管理计划2号</li>
+											<li>产品产品产</li>
+											<li>产品-资产管理计划2号资产管理计划2号资产管理计划2号</li>
+											<li>产品产品产产品产品产</li>
+											<li>产品产品产品-资产管理计划2号</li>
+											<li>产品产品品品产</li>
+											<li>产品-资产管理计划2号</li>
+											<li>产品产品产产品产品产产品产品产产品产品产</li>
+										</ul>
+									</div>
+								</div>
+								<!--select end-->
+							</div>
+							<!--titBlk end-->
+						</div>
+						<!--end pT20-->
+						<!--没有数据时使用<div class="nodata"><span>暂无查询结果</span></div>-->
+						<div class="tableWarp tabContent"> 
+							<div class="tabCnts">
+								<div class="tabCnt">
+									<form action="" method="post">
+										<!--<div class="nodata">
+											<span>快来点击下面的按钮进行下单操作</span>
+											<div class="dropWarp">
+												<a class="buttonB btnN" href="javascript:void(0);">下单</a>
+												<div class="dropList">
+													<a class="buttonB importBtn" href="javascript:void(0);">导入下单指令</a>
+													<a class="buttonB orderBtn" href="javascript:void(0);">人工下单</a>
+												</div>
+											</div>
+										</div>-->
+										<!--没有下单数据使用上面注释的<div class="nodata">-->
+										
+										<table border="0" cellspacing="0" cellpadding="0" class="table order">
+											<thead>
+												<tr>
+													<th width="150"><div class="column1">指令序号</div></th>
+													<th><div class="column2">产品简称</div></th>
+													<th><div class="column3">基金简称</div></th>
+													<th><div class="column4">委托方向</div></th>
+													<th><div class="column5">指令（金额/份额）</div></th>
+													<th><div class="column6">指令状态</div></th>
+													<th><div class="column7">详情</div></th>
+												</tr>
+											</thead>
+											<thead class="tipHead">
+												<tr>
+													<td colspan="7">
+														<div class="importResult slideDown vanish"><!--下单导入提示效果请调用slideDown(".importResult",500)；-->
+															<span class="close2">X</span>
+															<span class="successTips" style="display: inline-block;">提示：共12条指令，成功导入4条，剩余8条无法识别或已重复导入。</span>
+														</div> 
+													</td>
+												</tr>
+											</thead>
+											<!--排序样式:需要排序的字段文字后面加<i class="ico sort"></i>；在div上加样式 s_click；升序在div上添加样式sort_up、降序添加sort_down-->
+											<tbody>
+												<tr>
+													<td>
+														<div class="column1">
+															<label class="ckLabel"><input type="checkbox" name="orderCk" id="" value="" class="ckInput" />123654987123456789</label>
+														</div>
+													</td>
+													<td>
+														<div class="column2">
+															<span>华夏大盘</span>
+															<span class="colGray">000001</span>
+														</div>
+													</td>
+													<td>
+														<div class="column3">
+															<span>华夏大盘</span>
+															<span class="colGray">000001</span>
+														</div>
+													</td>
+													<td>
+														<div class="column4">
+															<span class="colRG">认购</span>
+															<!--委托方向，各个方向色值不同分别为：认购colRG、申购colSG、赎回、colSH、转换colZH、撤单colCD、修改分红方式colXG-->
+														</div>
+													</td>
+													<td>
+														<div class="column5">
+															<span>1,123,123.00元</span>
+														</div>
+													</td>
+													<td>
+														<div class="column6">
+															<span>未执行</span>
+														</div>
+													</td>
+													<td>
+														<div class="column7">
+															<i class="ico icoShow"></i>
+														</div>
+													</td>
+												</tr>
+												<tr class="hddenFields" style="display: none;">
+													<td>&nbsp;</td>
+													<td>
+														<span class="subTh">原委托方向</span>
+														<div class="column2">
+															<span class="singleLine">申购</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">原指令序号</span>
+														<div class="column3">
+															<span class="singleLine">000001</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">转换基金</span>
+														<div class="column4">
+															<span>鹏华基金</span>
+															<span>0000005</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">巨额赎回标志</span>
+														<div class="column5">
+															<span class="singleLine">继续赎回</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">订单日期</span>
+														<div class="column6">
+															<span class="singleLine">2016-09-12</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">分红方式</span>
+														<div class="column7">
+															<span class="singleLine">现金分红</span>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="column1">
+															<label class="ckLabel"><input type="checkbox" name="orderCk" id="" value="" class="ckInput" />564</label>
+														</div>
+													</td>
+													<td>
+														<div class="column2">
+															<span>华夏大盘</span>
+															<span class="colGray">000001</span>
+														</div>
+													</td>
+													<td>
+														<div class="column3">
+															<span>华夏大盘</span>
+															<span class="colGray">000001</span>
+														</div>
+													</td>
+													<td>
+														<div class="column4">
+															<span class="colSG">申购</span>
+														</div>
+													</td>
+													<td>
+														<div class="column5">
+															<span>1,123,123.00元</span>
+														</div>
+													</td>
+													<td>
+														<div class="column6">
+															<span>未执行</span>
+														</div>
+													</td>
+													<td>
+														<div class="column7">
+															<i class="ico icoShow"></i>
+														</div>
+													</td>
+												</tr>
+												<tr class="hddenFields" style="display: none;">
+													<td>&nbsp;</td>
+													<td>
+														<span class="subTh">原委托方向</span>
+														<div class="column2">
+															<span class="singleLine">申购</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">原指令序号</span>
+														<div class="column3">
+															<span class="singleLine">000001</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">转换基金</span>
+														<div class="column4">
+															<span>鹏华基金</span>
+															<span>0000005</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">巨额赎回标志</span>
+														<div class="column5">
+															<span class="singleLine">继续赎回</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">订单日期</span>
+														<div class="column6">
+															<span class="singleLine">2016-09-12</span>
+														</div>
+													</td>
+													<td>
+														<span class="subTh">分红方式</span>
+														<div class="column7">
+															<span class="singleLine">现金分红</span>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										
+										<div class="btmOp fixed">
+											<div class="ckAll">
+												<label class="ckLabel"><input type="checkbox" name="orderAllCk" id="" value="" class="ckInput ckAllInput" />全选</label>
+											</div>
+											<div class="btnFl">
+												<a class="buttonB" href="javascript:void(0);">确认执行</a>
+											</div>
+											<div class="btnFl">
+												<a class="buttonB" href="javascript:void(0);">删除指令</a>
+	
+											<input type="text" name="fundCode" value="" />
+											</div>
+											<div class="btnFr dropWarp">
+												<a class="buttonB btnN" href="javascript:void(0);">下单</a>
+												<div class="dropList">
+													<input type="file" name="" id="" value="" class="opacityFile" />
+													<a class="buttonB importBtn" href="javascript:void(0);">导入下单指令</a>
+													<a class="buttonB orderBtn" href="javascript:void(0);">人工下单</a>
+												</div>
+											</div>
+										</div>
+										<!--btmOp end-->
+									</form>
+								</div>
+								<!--未下单tabCnt end -->
+								<div class="tabCnt">
+									<table border="0" cellspacing="0" cellpadding="0" class="table order">
+										<thead>
+											<tr>
+												<th width="150"><div class="column1">指令序号</div></th>
+												<th><div class="column2">产品简称</div></th>
+												<th><div class="column3">基金简称</div></th>
+												<th><div class="column4">委托方向</div></th>
+												<th><div class="column5">指令（金额/份额）</div></th>
+												<th><div class="column6">受理状态</div></th>
+												<th><div class="column7">详情</div></th>
+											</tr>
+										</thead>
+										<!--排序样式:需要排序的字段文字后面加<i class="ico sort"></i>；在div上加样式 s_click；升序在div上添加样式sort_up、降序添加sort_down-->
+										<tbody>
+											<tr>
+												<td><div class="column1"><span>123456789987654321</span></div></td>
+												<td>
+													<div class="column2">
+														<span>华夏大盘</span>
+														<span class="colGray">000001</span>
+													</div>
+												</td>
+												<td>
+													<div class="column3">
+														<span>华夏大盘</span>
+														<span class="colGray">000001</span>
+													</div>
+												</td>
+												<td>
+													<div class="column4">
+														<span class="colRG">认购</span>
+														<!--委托方向，各个方向色值不同分别为：认购colRG、申购colSG、赎回、colSH、转换colZH、撤单colCD、修改分红方式colXG-->
+													</div>
+												</td>
+												<td>
+													<div class="column5">
+														<span>1,123,123.00元</span>
+													</div>
+												</td>
+												<td>
+													<div class="column6">
+														<span class="colCG">受理成功</span>
+														<!--受理状态色值为：成功colCG、失败colSB-->
+													</div>
+												</td>
+												<td>
+													<div class="column7">
+														<i class="ico icoShow"></i>
+													</div>
+												</td>
+											</tr>
+											<tr class="hddenFields" style="display: none;">
+												<td>&nbsp;</td>
+												<td>
+													<span class="subTh">原委托方向</span>
+													<div class="column2">
+														<span class="singleLine">申购</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">原指令序号</span>
+													<div class="column3">
+														<span class="singleLine">000001</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">转换基金</span>
+													<div class="column4">
+														<span>鹏华基金</span>
+														<span>0000005</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">巨额赎回标志</span>
+													<div class="column5">
+														<span class="singleLine">继续赎回</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">订单日期</span>
+													<div class="column6">
+														<span class="singleLine">2016-09-12</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">分红方式</span>
+													<div class="column7">
+														<span class="singleLine">现金分红</span>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td><div class="column1"><span>1234567891</span></div></td>
+												<td>
+													<div class="column2">
+														<span>华夏大盘</span>
+														<span class="colGray">000001</span>
+													</div>
+												</td>
+												<td>
+													<div class="column3">
+														<span>华夏大盘</span>
+														<span class="colGray">000001</span>
+													</div>
+												</td>
+												<td>
+													<div class="column4">
+														<span class="colSG">申购</span>
+													</div>
+												</td>
+												<td>
+													<div class="column5">
+														<span>1,123,123.00元</span>
+													</div>
+												</td>
+												<td>
+													<div class="column6">
+														<span class="colSB">受理失败</span>
+													</div>
+												</td>
+												<td>
+													<div class="column7">
+														<i class="ico icoShow"></i>
+													</div>
+												</td>
+											</tr>
+											<tr class="hddenFields" style="display: none;">
+												<td>&nbsp;</td>
+												<td>
+													<span class="subTh">原委托方向</span>
+													<div class="column2">
+														<span class="singleLine">申购</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">原指令序号</span>
+													<div class="column3">
+														<span class="singleLine">000001</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">转换基金</span>
+													<div class="column4">
+														<span>鹏华基金</span>
+														<span>0000005</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">巨额赎回标志</span>
+													<div class="column5">
+														<span class="singleLine">继续赎回</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">订单日期</span>
+													<div class="column6">
+														<span class="singleLine">2016-09-12</span>
+													</div>
+												</td>
+												<td>
+													<span class="subTh">分红方式</span>
+													<div class="column7">
+														<span class="singleLine">现金分红</span>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<!--分页开始-->
+									<div class="pagesWarp">
+										<div class="pages">
+											<a href="javascript:void(0);" class="page pLink"><< 首页</a>
+											<a href="javascript:void(0);" class="page pLink">< 上一页</a>
+											<span class="page pSpan curPage">1-20</span>条，共
+											<span class="page pSpan">564</span>条
+											<a href="javascript:void(0);" class="page pLink">下一页></a>
+											<a href="javascript:void(0);" class="page pLink">尾页>></a>
+										</div>
+									</div>
+									<!--分页结束-->
+								</div>
+								<!--已下单tabCnt end-->
+							</div>
+							<!--tabCnts end-->
+						</div>
+						<!--tableWarp end-->
+					</div>
+					<!--content end-->
+				</div>
+				<!--rightBar end-->
+			</div>
+			<!--Side end-->
+		</div>
+		<!--main end-->
+	</div>
+	<footer class="footer">
+		<div class="maxW">
+			<div class="equal">
+				<ul class=" fixed">
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">基金销售资格</span>
+								<span class="sBk"><img src="../images/imgF.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管机构</span>
+								<span class="sBk"><img src="../images/imgF-02.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管银行</span>
+								<span class="sBk"><img src="../images/imgF-03.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">自律组织</span>
+								<span class="sBk"><img src="../images/imgF-04.jpg"/></span>
+							</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!--equal end-->
+		</div>
+		<!--maxW end-->
+		<div class="copyRight">
+			<a href="login.html" class="crLink">联系我们</a>｜<a href="login.html" class="crLink">投资人权益须知</a>｜<a href="login.html" class="crLink">基金销售适用性规则</a>｜<a href="login.html" class="crLink">风险提示</a>｜<a href="login.html" class="crLink">免责声明</a>｜<a href="login.html" class="crLink">资质证明</a>
+			<br />
+			北京汇成基金销售有限公司 版权所有 All Rights Reserved. ICP 备案登记证编号:粤ICP备15062379号-1<br />
+			地址：北京市海淀区中关村E世界A座1108室  邮编：510308
+		</div>
+	</footer>	
+
+<!--导入popUp 开始-->
+<div class="popUp popUpImport">
+	<div class="popUpWarp">
+		<div class="popUpMain">
+			<div class="popUpTop">
+				<span class="popUpT">汇成基金</span>
+				<a href="javascript:void(0);" class="popClose">X</a>
+			</div>
+			<div class="popUpCnt">
+				<div class="popTip">
+					<span class="popIco"><img src="../images/ico_exl.jpg"/></span>
+					<span class="popTipTxt">汇成基金温馨提醒您！</span>
+				</div>
+			</div>
+			<div class="popUpfoot">
+				<a class="buttonB sureBtn" href="javascript:void(0);">确认导入</a>
+				<span class="space"></span>
+				<a class="buttonC cancelBtn" href="javascript:void(0);">重新导入</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--导入popUp 结束-->
+<!--下单popUp 开始-->
+<div class="popUp popUpForm">
+	<div class="popUpWarp">
+		<div class="popUpMain">
+			<div class="popUpTop">
+				<span class="popUpT">人工下单</span>
+				<a href="javascript:void(0);" class="popClose">X</a>
+			</div>
+			<form action="" method="post">
+				<div class="popUpCnt">
+					<div class="orderForm">
+						<div class="sItem">
+							<label class="sLabel">交易账户</label>
+							<div class="sWarp s_show">
+								<div class="sItemed s_select">
+									<span class="sltedCnt">资管计划1号</span>
+									<i class="ico icoDown"></i>
+									<input type="hidden" name="" id="" value="" class="valInput" />
+								</div>
+								<div class="s_opts">
+									<ul>
+										<li class="s_opt s_opted" thisVal="0">资管计划1号</li>
+										<li class="s_opt" thisVal="1">资管计划2号</li>
+										<li class="s_opt" thisVal="2">资管计划3号</li>
+										<li class="s_opt" thisVal="3">资管计划4号</li>
+										<li class="s_opt" thisVal="4" title="资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号">资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号资管计划5号</li>
+										<li class="s_opt" thisVal="5">资管计划6号资管计划6号资管计划6号资管计划6号资管计划6号</li>
+										<li class="s_opt" thisVal="1">资管计划2号</li>
+										<li class="s_opt" thisVal="2">资管计划3号</li>
+										<li class="s_opt" thisVal="3">资管计划4号</li>
+										<li class="s_opt" thisVal="4">资管计划5号</li>
+										<li class="s_opt" thisVal="5">资管计划6号</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--sItem end-->
+						<div class="sItem">
+							<label class="sLabel">委托方向</label>
+							<div class="sWarp">
+								<div class="sItemed s_select">
+									<span class="sltedCnt">认购</span>
+									<i class="ico icoDown"></i>
+									<input type="hidden" name="" id="" value="" class="valInput" />
+								</div>
+								<div class="s_opts fxList">
+									<ul>
+										<li class="s_opt s_opted" thisVal="0">认购</li>
+										<li class="s_opt" thisVal="1">申购</li>
+										<li class="s_opt" thisVal="2">赎回</li>
+										<li class="s_opt" thisVal="3">转换</li>
+										<li class="s_opt" thisVal="4">撤单</li>
+										<li class="s_opt" thisVal="5">修改分红方式</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--sItem end-->
+						<div class="fxTpyeWarp">
+							<!--委托方向-认购-->
+							<div class="fxTpye dpyB">
+								<div class="sItem">
+									<label class="sLabel">产品简称</label>
+									<div class="sWarp">
+										<div class="sItemed noPd">
+											<input type="text" name="fundCode" id="" value="" class="sInput" placeholder="请输入基金代码/简称/拼音首字母" />
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">认购金额(元)</label>
+									<div class="sWarp">
+										<div class="sItemed">
+											<input type="text" name="" id="" value="" class="sInput" placeholder="请输入认购金额" />
+										</div>
+									</div>
+								</div>
+								<div class="s_tip show">最大认购限额5000,000.00元</div><!--提示文本需要显示的请添加class“show”<-->
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">分红方式</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">现金分红</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt">现金分红</li>
+												<li class="s_opt">红利再投资</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+							</div>	
+							<!--fxTpye end-->
+							<!--委托方向-申购-->
+							<div class="fxTpye">
+								<div class="sItem">
+									<label class="sLabel">产品简称</label>
+									<div class="sWarp">
+										<div class="sItemed">
+											<input type="text" name="" id="" value="" class="sInput" placeholder="请输入基金代码/简称/拼音首字母" />
+										</div>
+										<div class="s_opts"><!--联想样式-->
+											<ul>
+												<li class="s_opt s_opted">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">申购金额(元)</label>
+									<div class="sWarp">
+										<div class="sItemed">
+											<input type="text" name="" id="" value="" class="sInput" placeholder="请输入申购金额" />
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="s_tip show">最大申购限额5000,000.00元</div><!--提示文本需要显示的请添加class“show”<-->
+								<div class="sItem">
+									<label class="sLabel">分红方式</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">现金分红</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt">现金分红</li>
+												<li class="s_opt">红利再投资</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+							</div>	
+							<!--fxTpye end-->
+							<!--委托方向-赎回-->
+							<div class="fxTpye">
+								<div class="sItem">
+									<label class="sLabel">持仓产品</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">60001&nbsp;华夏证券</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt s_opted">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">赎回份额</label>
+									<div class="sWarp">
+										<div class="sItemed">
+											<input type="text" name="" id="" value="" class="sInput" placeholder="请输入赎回份额" />
+										</div>
+									</div>
+								</div>
+								<div class="s_tip show">可赎回份额1324566.34</div><!--提示文本需要显示的请添加class“show”<-->
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">巨额赎回标志</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">继续赎回</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt">继续赎回</li>
+												<li class="s_opt">放弃超额部分</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+							</div>	
+							<!--fxTpye end-->
+							<!--委托方向-转换-->
+							<div class="fxTpye">
+								<div class="sItem">
+									<label class="sLabel">转出产品</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">60001&nbsp;华夏证券</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt s_opted">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">转入产品</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">60001&nbsp;华夏证券</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt s_opted">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">转换份额</label>
+									<div class="sWarp">
+										<div class="sItemed">
+											<input type="text" name="" id="" value="" class="sInput" placeholder="请输入转换份额" />
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="s_tip show">可转份额5000,000.00</div><!--提示文本需要显示的请添加class“show”<-->
+								<div class="sItem">
+									<label class="sLabel">巨额赎回标志</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">继续赎回</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt">继续赎回</li>
+												<li class="s_opt">放弃超额部分</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								
+							</div>	
+							<!--fxTpye end-->
+							<!--委托方向-撤单-->
+							<div class="fxTpye">
+								<div class="sItem">
+									<label class="sLabel">选择交易</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">认购&nbsp;|&nbsp;60001&nbsp;华夏证券&nbsp;|&nbsp;2000.00元</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt s_opted">认购&nbsp;|&nbsp;60001&nbsp;华夏证券&nbsp;|&nbsp;2000.00元</li>
+												<li class="s_opt">申购&nbsp;|&nbsp;60001&nbsp;华夏证券&nbsp;|&nbsp;2000.00元</li>
+												<li class="s_opt">赎回&nbsp;|&nbsp;60001&nbsp;华夏证券&nbsp;|&nbsp;2000.00元</li>
+												<li class="s_opt">转换&nbsp;|&nbsp;60001&nbsp;华夏证券&nbsp;|&nbsp;2000.00元</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="s_tip show">原交易时间：2016-08-22 20:29</div><!--提示文本需要显示的请添加class“show”<-->
+							</div>	
+							<!--fxTpye end-->
+							<!--委托方向-修改分红方式-->
+							<div class="fxTpye">
+								<div class="sItem">
+									<label class="sLabel">持仓产品</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">60001&nbsp;华夏证券</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt s_opted">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+												<li class="s_opt">60001&nbsp;华夏证券</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+								<div class="sItem">
+									<label class="sLabel">修改分红方式</label>
+									<div class="sWarp">
+										<div class="sItemed s_select">
+											<span class="sltedCnt">现金分红</span>
+											<i class="ico icoDown"></i>
+										</div>
+										<div class="s_opts">
+											<ul>
+												<li class="s_opt">现金分红</li>
+												<li class="s_opt">红利再投资</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--sItem end-->
+							</div>	
+							<!--fxTpye end-->
+						</div>
+						<!--fxTpyeWarp end-->
+					</div>	
+					<!--orderForm end-->
+				</div>
+				<!--popUpCnt end-->
+				<div class="popUpfoot">
+					<a class="buttonB sureBtn" href="javascript:void(0);">确认</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<!--下单popUp 结束-->
+<link href="../css/autocmp.css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery-ui-1.10.3.custom.min.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(e){
+    //自动完成
+	$("input[name='fundCode']").autocomplete({
+		  source: [ "111000 中国平安", "222000 广发货币", "333000 中国石油", "444444 泰康货币", "551111 人寿保险"],
+		  minLength: 1,
+		  autoFocus: true,
+	});
+	//导入下单
+	$(document).on("click",".importBtn",function(){
+		//popUp(".popUpImport","您导入的文件格式不正确，请重新导入","导入下单指令","warn");//导入失败
+		popUp(".popUpImport","20133233222","导入下单指令","","ico");//导入成功
+	});
+	//人工下单
+	$(document).on("click",".orderBtn",function(){
+		popUp(".popUpForm");//导入失败
+	});
+	//关闭popUp
+	$(document).on("click",".popClose",function(){
+		closePopUp();
+	});
+	//弹出的公告
+	setTimeout(function(){slideDown(".newestNotice",1000)},1000);
+	//导入成功提示
+	setTimeout(function(){slideDown(".importResult",500)},2000);
+	
+	//下拉选择
+	$(".s_opt").on("click",function(){
+		var thisVal = $(this).attr("thisVal");
+		var thisShow = $(this).html();
+		$(this).addClass("s_opted").siblings().removeClass("s_opted").parents(".s_opts").hide().siblings(".sItemed").children(".sltedCnt").html(thisShow).siblings(".valInput").val(thisVal);
+	})
+	/*级联*/
+	$(".fxList").on("click","li",function(){
+		var thisLi = $(this).index();
+		$(".fxTpyeWarp").children(".fxTpye").eq(thisLi).show().siblings().hide();
+		console.log(thisLi);
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

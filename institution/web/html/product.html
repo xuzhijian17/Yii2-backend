@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1, minimum-scale=1,target-densitydpi=device-width" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link href="../css/institution.css" rel="stylesheet">
+	<link href="../css/animation.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/institution.js"></script>
+	<title>产品市场</title>
+</head>
+<body class="bgF pBody">
+	<div class="container">
+		<!--登陆前-->
+		<!--<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<a href="login.html" class="linkT1">登陆</a>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+				</div>
+			</div>
+		</header>-->
+		<!--登陆前结束-->
+		<!--登陆后-->
+		<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<span class="welcome"><i class="ico icoWel"></i>欢迎您！华夏证券</span>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+					<div class="nav">
+						<ul>
+							<li><a href="query.html" class="navLink">持仓查询</a></li>
+							<li><a href="product.html" class="navLink cur">产品市场</a></li>
+							<li class="dropMenu">
+								<span class="navLink ">
+									交易
+								</span>
+								<span class="subMenu">
+									<a href="transaction-order.html" class="subLink">交易下单</a>
+									<a href="transaction-query.html" class="subLink">交易查询</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--登陆后结束-->
+		<div class="main">
+			<div class="content">
+				<div class="pT10">
+					<div class="titBlk">
+						<div class="titlist">
+							<ul>
+								<li>产品市场</li>
+							</ul>
+						</div>
+					</div>
+					<!--titBlk end-->
+				</div>
+				<!--end pT20-->
+				<div class="ptype dlBlk">
+					<dl>
+						<dt>产品种类：</dt>
+						<dd><a href="javascript:void(0);" class="linkT2 colCur">货币型</a></dd>
+						<dd><a href="javascript:void(0);" class="linkT2">债券型</a></dd>
+						<dd><a href="javascript:void(0);" class="linkT2">混合型</a></dd>
+						<dd><a href="javascript:void(0);" class="linkT2">股票型</a></dd>
+						<dd><a href="javascript:void(0);" class="linkT2">QDII</a></dd>
+						<dd><a href="javascript:void(0);" class="linkT2">其他</a></dd>
+					</dl>
+					<dl>
+						<dt>二级分类：</dt>
+						<dd>
+							<div class="dropBox">
+								<div class="dbSlted">
+									<span class="dbSltedVal">全部</span><i class="ico icoDown"></i>
+								</div>
+								<div class="options optBox">
+									<ul>
+										<li>货币市场基金-A类</li>
+										<li>货币市场基金-B类</li>
+										<li>货币市场基金</li>
+									</ul>
+								</div>
+							</div>
+						</dd>
+						<dd class="label">按机构：</dd>
+						<dd>
+							<div class="dropBox">
+								<div class="dbSlted">
+									<span class="dbSltedVal">
+										<input type="text" name="" id="multi" value="全部" />
+									</span>
+									<i class="ico icoDown"></i>
+								</div>
+								<div class="options multiBox">
+									<ul>
+										<li><label class="multi" value="华夏">华夏基金</label></li>
+										<li><label class="multi" value="易方达">易方达基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+										<li><label class="multi" value="华夏">华夏基金</label></li>
+										<li><label class="multi" value="易方达">易方达基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+										<li><label class="multi" value="华夏">华夏基金</label></li>
+										<li><label class="multi" value="易方达">易方达基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+										<li><label class="multi" value="华润">华润元大基金</label></li>
+									</ul>
+								</div>
+							</div>
+						</dd>
+						<dd><a href="javascript:void(0);" class="buttonB">查询</a></dd>
+					</dl>
+					<dl>
+						<dt>产品搜索：</dt>
+						<dd>
+							<div class="itemWarp">
+								<div class="txtitem seachItem">
+									<div class="item">
+										<input type="text" name="" id="" value="" placeholder="输入产品代码/简称/拼音" class="txtInput seachInput" />
+										<a href="javascript:void(0);" class="seachBtn">
+											<span class="ico icoSeach"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!--itemWarp end-->
+						</dd>
+					</dl>
+				</div>
+				<!--没有数据时使用<div class="nodata"><span>暂无查询结果</span></div>-->
+				<div class="tableWarp"> 
+					<table border="0" cellspacing="0" cellpadding="0" class="table product">
+						<thead>
+							<tr>
+								<th><div class="column1">产品简称</div></th>
+								<th><div class="column2 dynamic-field1">万份收益(元)</div></th>
+								<th>
+									<div class="column3 s_click allType">
+										<div class="t_click">
+											<span class="t_selected">7日年化收益率</span>
+											<i class="ico icoDown"></i>
+											<i class="ico sort"></i>
+										</div>
+										<div class="typeList">
+											<ul>
+												<li>14日年化收益率</li>
+												<li>21日年化收益率</li>
+												<li>35日年化收益率</li>
+												<li>近1月收益率</li>
+												<li>近3月收益率</li>
+												<li>近6月收益率</li>
+											</ul>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="column4 s_click allType">
+										<div class="t_click">
+											<span class="t_selected">今年以来收益率</span>
+											<i class="ico icoDown"></i>
+											<i class="ico sort"></i>
+										</div>
+										<div class="typeList">
+											<ul>
+												<li>近1年收益率</li>
+												<li>近2年收益率</li>
+												<li>近3年收益率</li>
+												<li>近5年收益率</li>
+												<li>成立以来收益率</li>
+											</ul>
+										</div>
+									</div>
+								</th>
+								<th><div class="column5">万份收益波动率</div></th>
+								<th><div class="column6">赎回便利</div></th>
+								<th><div class="column7">申购限制(元)</div></th>
+								<th><div class="column8">最新规模(亿元)</div></th>
+							</tr>
+						</thead>
+						<!--排序样式:需要排序的字段文字后面加<i class="ico sort"></i>；在div上加样式 s_click；升序在div上添加样式sort_up、降序添加sort_down-->
+						<tbody>
+							<tr>
+								<td>
+									<div class="column1">
+										<span>华夏大盘</span>
+										<span class="colGray">000001</span>
+									</div>
+								</td>
+								<td>
+									<div class="column2">
+										<span>0.7226</span>
+										<span class="colGray">2016-08-11</span>
+									</div>
+								</td>
+								<td>
+									<div class="column3">
+										<span class="colRed">2.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column4">
+										<span class="colRed">1.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column5">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column6">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column7">
+										<span>1,000,000.00</span>
+									</div>
+								</td>
+								<td>
+									<div class="column8">
+										<span>12.32</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="column1">
+										<span>华夏大盘</span>
+										<span class="colGray">000001</span>
+									</div>
+								</td>
+								<td>
+									<div class="column2">
+										<span>0.7226</span>
+										<span class="colGray">2016-08-11</span>
+									</div>
+								</td>
+								<td>
+									<div class="column3">
+										<span class="colRed">2.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column4">
+										<span class="colRed">1.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column5">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column6">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column7">
+										<span>1,000,000.00</span>
+									</div>
+								</td>
+								<td>
+									<div class="column8">
+										<span>12.32</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="column1">
+										<span>华夏大盘</span>
+										<span class="colGray">000001</span>
+									</div>
+								</td>
+								<td>
+									<div class="column2">
+										<span>0.7226</span>
+										<span class="colGray">2016-08-11</span>
+									</div>
+								</td>
+								<td>
+									<div class="column3">
+										<span class="colRed">2.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column4">
+										<span class="colRed">1.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column5">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column6">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column7">
+										<span>1,000,000.00</span>
+									</div>
+								</td>
+								<td>
+									<div class="column8">
+										<span>12.32</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="column1">
+										<span>华夏大盘</span>
+										<span class="colGray">000001</span>
+									</div>
+								</td>
+								<td>
+									<div class="column2">
+										<span>0.7226</span>
+										<span class="colGray">2016-08-11</span>
+									</div>
+								</td>
+								<td>
+									<div class="column3">
+										<span class="colRed">2.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column4">
+										<span class="colRed">1.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column5">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column6">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column7">
+										<span>1,000,000.00</span>
+									</div>
+								</td>
+								<td>
+									<div class="column8">
+										<span>12.32</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="column1">
+										<span>华夏大盘</span>
+										<span class="colGray">000001</span>
+									</div>
+								</td>
+								<td>
+									<div class="column2">
+										<span>0.7226</span>
+										<span class="colGray">2016-08-11</span>
+									</div>
+								</td>
+								<td>
+									<div class="column3">
+										<span class="colRed">2.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column4">
+										<span class="colRed">1.23%</span>
+									</div>
+								</td>
+								<td>
+									<div class="column5">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column6">
+										<span>0.2323</span>
+									</div>
+								</td>
+								<td>
+									<div class="column7">
+										<span>1,000,000.00</span>
+									</div>
+								</td>
+								<td>
+									<div class="column8">
+										<span>12.32</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="pagesWarp">
+						<div class="pages">
+							<a href="javascript:void(0);" class="page pLink"><< 首页</a>
+							<a href="javascript:void(0);" class="page pLink">< 上一页</a>
+							<span class="page pSpan curPage">1-20</span>条，共
+							<span class="page pSpan">564</span>条
+							<a href="javascript:void(0);" class="page pLink">下一页></a>
+							<a href="javascript:void(0);" class="page pLink">尾页>></a>
+							
+						</div>
+						<a href="javascript:void(0)" class="linkT1 ">导出查询结果</a>
+					</div>
+				</div>
+				<!--tableWarp end-->
+			</div>
+			<!--content end-->
+		</div>
+		<!--main end-->
+	</div>
+	<footer class="footer">
+		<div class="maxW">
+			<div class="equal">
+				<ul class=" fixed">
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">基金销售资格</span>
+								<span class="sBk"><img src="../images/imgF.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管机构</span>
+								<span class="sBk"><img src="../images/imgF-02.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管银行</span>
+								<span class="sBk"><img src="../images/imgF-03.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">自律组织</span>
+								<span class="sBk"><img src="../images/imgF-04.jpg"/></span>
+							</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!--equal end-->
+		</div>
+		<!--maxW end-->
+		<div class="copyRight">
+			<a href="login.html" class="crLink">联系我们</a>｜<a href="login.html" class="crLink">投资人权益须知</a>｜<a href="login.html" class="crLink">基金销售适用性规则</a>｜<a href="login.html" class="crLink">风险提示</a>｜<a href="login.html" class="crLink">免责声明</a>｜<a href="login.html" class="crLink">资质证明</a>
+			<br />
+			北京汇成基金销售有限公司 版权所有 All Rights Reserved. ICP 备案登记证编号:粤ICP备15062379号-1<br />
+			地址：北京市海淀区中关村E世界A座1108室  邮编：510308
+		</div>
+	</footer>	
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+$(".options ul li").on("click",function(e){
+	if($(this).parents().hasClass("optBox")){
+		var sltVal = $(this).html();
+		$(this).parents(".options").hide().siblings(".dbSlted").children(".dbSltedVal").html(sltVal);
+	}else if($(this).parents().hasClass("multiBox")){
+		e.stopPropagation();
+		$(this).children(".multi").toggleClass("multied");
+		var tagArray= new Array();
+		$(".multied").each(function(){
+			tagArray.push($(this).html());
+		});
+		if(tagArray.length==0){
+			$("#multi").val("全部")
+		}else{
+			$("#multi").val(tagArray).focus();
+		}
+	}
+});
+
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

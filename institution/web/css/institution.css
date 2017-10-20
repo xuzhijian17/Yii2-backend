@@ -1,0 +1,1073 @@
+﻿@import url(animate.min.css);
+
+@charset "utf-8";
+/* CSS Document */
+html,body{ height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,a {padding: 0;margin: 0;  outline:none;word-wrap:break-word;}
+body{font-family:arial,"微软雅黑"; color:#4b4b4b; font-size:14px; background: #f6f6f6;}
+p { margin:0 0 20px 0; text-indent:0px;}
+fieldset,img {border: 0; display:block;}
+ol,ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;}
+q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+input,button,select,textarea{outline:none;} 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #94a1ad;} 
+input:-moz-placeholder, textarea:-moz-placeholder { color: #94a1ad;} 
+input::-moz-placeholder, textarea::-moz-placeholder { color: #94a1ad;} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #94a1ad;} 
+a { text-decoration: none; color: #35495d;}
+a:focus,area:focus { outline:none;}
+/**:not(input):not(textarea) {
+-webkit-user-select: none; 
+-webkit-touch-callout: none;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent; 
+}*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+/**{-moz-user-select:none;-webkit-user-select:none}*/
+
+
+
+/*
+ * 公用
+ */
+.fixed::after,.maxW::after,.txtitem::after,.itemLine::after {content: ""; clear: both; display: block;}
+.maxW { max-width: 1120px; margin: 0 auto;}
+
+body .sBk,body .dpyB { display: block;}
+body .dpyIB { display: inline-block;}
+body .dpyN { display: none;}
+body .hide {visibility: hidden;}
+body .show {visibility: visible;}
+body .fL { float: left;}
+body .fR { float: right;}
+
+.sBk img { display: block; margin: 0 auto;}
+.rBorder { display: block; border-right: 1px solid #e2e2e2;}
+.last .rBorder { border-right: 0px;}
+
+.linkB2 { display: inline-block;}
+.linkT1 { color: #2c97fb;}
+.linkT1:hover {text-decoration: underline;}
+.linkT2 { color: #94a1ad;}
+.linkT2:hover { color: #2c97fb;}
+
+.w100 { width: 100px;}
+
+body .mB15 { margin-bottom: 15px;}
+body .mB20 { margin-bottom: 20px;}
+body .mB30 { margin-bottom: 30px;}
+body .mB40 { margin-bottom: 40px;}
+
+body .p3020 {padding: 30px 20px;}
+body .pT10 { padding-top: 10px;}
+body .pT20 { padding-top: 20px;}
+body .pB40 { padding-bottom: 40px;}
+body .pLR5 { padding: 0 5px;}
+  
+
+.bgF { background: #FFFFFF;}
+.close,.close2 { background: #e3ecf2; width: 24px; height: 24px; border-radius: 50%; float: right; display: block; margin:5px 0 0 35px; line-height: 24px; text-align: center; color: #FFF; cursor: pointer;}
+.close2 {background: #dff0fe; color: #95cbfd; width: 16px; height: 16px; line-height: 16px;}
+.table tr td span.close2{ line-height: 16px;}
+.close:hover { background: #2c97fb;}
+.close2:hover { background: #ffffff;}
+
+.ico { background: url(../images/ico.png) no-repeat 0 0; display: inline-block; cursor: pointer;}
+
+.colGray { color: #94a1ad;}
+.colRed { color: #e03030;}
+.colGreen { color: #3ab566;}
+.colCur { color: #2c97fb;}
+.table tr td.colRed { color: #e03030;}
+.taL { text-align: left;}
+
+/*
+ * 状态色值
+ */
+.colCG {color: #10508c;}
+.colSB {color: #e59d20;}
+.colRG {color: #8b1e13;}
+.colSG {color: #e03030;}
+.colSH {color: #109e10;}
+.colZH {color: #049e7c;}
+.colCD {color: #0f87bf;}
+.colXG {color: #3458b5;}
+
+.nodata {padding: 95px 0; text-align: center;}
+.nodata span {background: url(../images/nodata.png) no-repeat center 0; display: block; padding-top: 130px; text-align: center; color: #94a1ad;}
+
+
+/*
+ * 等宽
+ */
+.equal {width: 100%;}
+.equal ul li {float: left;}
+
+/*
+ * loauy
+ */
+.container {height: auto !important; min-height: 100%;}
+.header { position: relative; z-index: 999;}
+.footer {height:300px;margin-top: -300px; background: #FFF; overflow: hidden;}
+.pBody .footer {background: url(../images/line.jpg) repeat-x 0 0;}
+
+/*
+ * header
+ */
+.topBar {background: #eef4f8; height: 40px; line-height: 40px; border-bottom: 1px solid #dde7ed;}
+.kf { display: block; float: right; padding-left: 30px; color: #92a1af;}
+.icokf {background-position: -10px -20px; width: 16px; height: 18px; margin:0 10px -2px 0;}
+.welcome { display: block; float: left; color: #92a1af;}
+.icoWel {background-position: -10px 0; width: 16px; height: 16px; margin:0 10px -2px 0;}
+.navWarp { background: #FFF; height: 80px; border-bottom: 1px solid #eeeeee;}
+.logo { display: block; background: url(../images/logo.png) no-repeat 0 center; width: 400px; height: 45px; float: left; margin: 17px 20px 0 0; text-indent: -9999px;}
+
+.nav { float: right; padding-top: 21px;}
+.nav ul li { float: left; margin-left: 40px;}
+.dropMenu { position: relative;}
+.navLink {font-size: 18px; color: #3e5062; padding: 5px 15px; line-height: 25px; border: 1px solid transparent; display: block; cursor: pointer;}
+.navLink:hover,.cur {color: #2c97fb;}
+.hover .navLink  {color: #2c97fb;background: #FFF;border: 1px solid #e6e6e6; border-bottom-color:transparent; position: relative; z-index: 9;}
+.subMenu {position: absolute; top: 35px; right:0;background: #FFF;border: 1px solid #e6e6e6; display: none; padding: 3px 0; z-index: 1;} 
+.hover .subMenu { display: block;}
+.subLink { display: block;white-space:nowrap; padding: 0 10px; font-size: 16px; line-height: 30px;}
+.subLink:hover {background: #dce9f7;}
+
+/*
+ * main
+ */
+.main { max-width: 1120px; margin: 0 auto; padding-bottom: 350px; position: relative; z-index: 99;}
+.content { width: 100%;}
+.Side { background: #f6f9fc; position: relative; box-shadow: -2px 0 3px #e8ecee;}
+.leftBar { position: absolute; width: 210px;}
+.rightBar { box-shadow: -2px 0 3px #e3ecf2; margin-left: 210px;}
+
+/*
+ * main 
+ * query
+ */
+.Side .content { background:  #fff; min-height: 575px; box-shadow: 2px 0 3px #E8ECEE; padding-bottom: 1px;}
+.userWarp { padding-bottom: 20px; border-bottom: 1px solid #e3ecf2;}
+.photo { padding: 15px 0 0;}
+.photo img{ width: 100px; height: 100px; margin: 0 auto; border-radius: 50%; border: 5px solid #FFF;}
+.userName { text-align: center; padding: 5px 0 15px;}
+.userName span{padding: 0 10px;}
+.icoRound { width: 30px; height: 30px; border: 1px solid #b5cad7; display: block; border-radius: 50%; margin-left: 30px; float: left;}
+.icoUser {background: url(../images/ico_user_info.png) no-repeat center center;}
+.icoCo {background: url(../images/ico_user_qy.png) no-repeat center center;}
+.icoset {background: url(../images/ico_user_set.png) no-repeat center center;}
+.icoRound:hover { background-color: #FFF;}
+.subA { display: block; padding:0 20px 0 40px; line-height: 40px; color: #3e5062; border: 1px solid transparent; margin-top: -1px;}
+.subA:hover,.subNav .cur {color: #3e5062; font-weight: bold; border-color: #e3ecf2 transparent; background-color: #FFF;}
+.date { float: right;}
+.newestNotice {padding: 0 20px 0 40px; color: #94a1ad; line-height: 35px; background: #fdfefe; border-bottom:1px solid #f6f9fc; display: none;}
+.horn { background: url(../images/horn.gif) no-repeat 0 center; padding-left: 20px;}
+.icoR { float: right; width: 6px; height: 9px; background-position: 0 -30px;}
+.subA .icoR {margin-top: 16px;}
+
+/*
+ * main
+ * product
+ */
+.ptype {background: #fbfbfc; margin: 0 20px; color: #94a1ad; margin-bottom: 15px; position: relative;z-index: 9999;}
+.ptype dl { margin: 0 20px; border-bottom: 1px dashed #e8f1f6; padding: 10px;}
+.dlBlk dl::after {content: ""; display: block; clear: both;}
+.ptype dl dt,.ptype dl dd { float: left; line-height: 30px; font-weight: bold;}
+dl.last { border: 0;}
+.ptype dl dd { padding: 0 15px 0 10px;} 
+.ptype dl dd.label { padding: 0 0px 0 10px;} 
+
+
+/*
+ * main
+ * order
+ */
+.icoShow { width: 14px; height: 10px; background: url(../images/ico.png) no-repeat -30px -50px;}
+.subOpen {background-position: -30px -40px;}
+.btmOp { padding: 15px 0 60px;}
+.ckAll {color: #3e5062; font-size: 12px; float: left; margin-right: 20px;line-height: 30px;}
+.btnFl { float: left; margin-right: 20px;}
+.btnFr { float: right; margin-left: 20px;}
+.dropWarp { position: relative; min-width: 95px;}
+.nodata .dropWarp { width: 100px; margin: 20px auto 0; }
+.dropList { position: absolute; display: none;}
+.dropWarp:hover .dropList {display: block;}
+.dropList .buttonB { margin-top: -1px; display: block;}
+table thead.tipHead td { height: 0;}
+table thead.tipHead td .importResult { background: #95cbfd;color: #FFF; display: none; margin: 0; line-height: 24px; text-align: left; padding:0 12px;}
+
+/*
+ * main
+ * transaction query
+ */
+.tabCnt .ptype { margin: 0 0 15px;}
+.icopdf { border: 1px solid #b1c0cb; width: 32px; height: 16px; line-height: 16px; display: inline-block;}
+
+/*
+ * Tab
+ */
+.titBlk {margin: 0 20px; border-bottom: 2px solid #ebeef3; position: relative; z-index: 999;}
+.titlist::after {content: ""; display: block; clear: both;}
+.titlist ul li {float: left; height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; width: 115px; text-align: center;}
+.curLine { width: 115px; display: block;position: absolute;top: 40px; background: #2C97FB; height: 2px;}
+
+.tabOption { border-left: 1px solid #ced4e0; cursor:pointer; display: inline-block; width: 115px; line-height: 20px;}
+.first .tabOption { border: 0;}
+
+.tabContent { overflow: hidden;}
+.tabCnts { position: relative;}
+.tabCnts::after {content: ""; display: block; clear: both;}
+.tabCnt {float: left; font-size: 12px;}
+
+/*
+ * table
+ */
+.tableWarp { margin: 0 20px; white-space: nowrap;}
+.table { width: 100%;font-size: 12px;}
+.table tr th {height: 40px; color: #94a1ad; background: #fbfbfc; font-weight: normal;}
+.table tr td {height: 40px; color: #3e5062;}
+.table tbody tr {border-bottom: 1px solid #f4f6f8;}
+.table tbody tr:hover {background-color: #fdfdfd;}
+.table div {margin: 0 20px; line-height: 40px;}
+.table tr td { height: 60px;}
+.table tr td span { display: block; line-height: 14px;}
+.table tbody tr.open { border-bottom: 0; background: #f7fbfe;}
+.table tbody tr.open td { border-bottom: 1px dashed #ddecfa;}
+.table tbody tr.open td.first { border-bottom: 0px;}
+.table tbody tr.hddenFields {background: #f7fbfe;}
+.table tbody tr.hddenFields td { vertical-align: top;}
+.subTh { display: block; padding: 10px 0; line-height: 15px; color: #94a1ad;}
+.table tbody tr.hddenFields td div span { line-height: 15px;}
+.table tbody tr.hddenFields td div .singleLine { line-height: 30px;}
+
+
+/*
+ * table
+ * query
+ */
+.query .column3 {text-align: right;}
+.query .column4 {text-align: center;}
+.query .column5 {text-align: center;}
+.query .column6 {text-align: right;}
+
+/*
+ * table
+ * product
+ */
+.product { text-align: center;}
+.product tr th {background: none;}
+.product thead tr { border-bottom: 1px solid #ced4e0;}
+.product .column1 { text-align: left;}
+.product .column8 { text-align: right;}
+
+/*
+ * table
+ * order
+ */
+.order { text-align: center;} 
+.order .column1 { text-align: left; margin-right: 0;} 
+.order .column1 .ckLabel { margin-left: -15px;}
+.order .column7 {width: 55px; margin: 0;}
+.order .hddenFields .column7 {width:auto; margin: 0;}
+
+/*
+ * table
+ * mTable
+ */
+.mTable {white-space:normal; text-align: center;}
+.mTable .tdCnt { text-align: left;}
+.mTable .first {text-align: left; padding-left: 20px;}
+
+
+
+/*
+ *sort 
+ */
+.s_click { cursor: pointer;}
+.sort_up { cursor: pointer;}
+.sort { background-position: 0 0; width: 5px; height: 7px; margin-left: 5px;}
+.sort_up .sort { background-position: 0 -10px;}
+.sort_down .sort { background-position: 0 -20px;}
+
+/*
+ * select type
+ */
+table .allType { position: relative; z-index: 999; cursor: pointer;}
+table .typeList { position: absolute; background: #fcfcfc; top: 5px; padding-top: 25px; margin: 0; width: 100%; border: 1px solid #e3ecf2; z-index: -1; display: none;}
+table .typeList ul { background: #FFF; padding-top: 10px;}
+table .typeList ul li { height: 25px; line-height: 25px;}
+table .typeList ul li:hover { background: #fcfcfc;}
+table .t_click { margin: 0;line-height: none;}
+table .allType .icoDown { position: absolute; top: 30px; left: 50%; margin-left: -5px;}
+
+/*
+ * form
+ */
+.txtitem {border: 1px solid #e1e6eb;}
+.item { width: 100%; height: 30px; position: relative; background: #FFF;}
+.txtInput { width: 96%; height: 30px; line-height: 30px; border: 0; font-size: 14px; margin: 0 2%; background: none;}
+.ptype .txtInput { height: 28px; line-height: 28px; border: 0; font-size: 12px; margin: 0 2%; background: none; position: relative;z-index: 9;}
+.ptype .item {height: 28px;}
+.icoDate { background-position: -10px -40px; width: 14px; height: 14px; position: absolute; z-index: -1; right: 10px; top: 50%; z-index: 1; margin: -7px 0 0;}
+.icoLabel .item {float: left; width: 79%;}
+.txtLabel { float: left; display: block; height: 30px; width: 20%;}
+.txtLabel span{display: block; line-height: 30px; padding: 0 5px;}
+.error { color: #FF0000; height: 25px; line-height: 20px; visibility: hidden;}
+.focus {border-color: #40a3e1;}
+.empty {position: absolute; width: 20px; height: 30px; right: 0; line-height: 30px; display: none;}
+
+.ckInput { position: absolute; top: 0; left: -9999990px; opacity: 0;}
+.ckLabel { position: relative; padding-left: 15px; display: block; cursor: pointer;}
+.ckLabel::after { position: absolute; content: ""; display: block; width: 10px; height: 10px; background: url(../images/ico.png) no-repeat 0 -60px; left: 0px;  top: 50%; margin-top: -5px;}
+.ckLabeled::after {background: url(../images/ico.png) no-repeat 0 -50px;}
+
+
+.seachItem { width: 190px;}
+.item .seachInput { width: 160px; margin: 0 0 0 5px; float: left;} 
+
+.orderForm { margin: 0 40px;padding-top: 10px;}
+.sItem { margin-bottom: 15px;}
+.sItem::after { display: block; clear: both; content: "";}
+.sLabel { width: 80px; float: left;display: block; height: 30px; line-height: 30px; margin-left: -20px; text-align: right; padding-right: 10px;}
+.sWarp { float: left; height: 30px; position: relative; z-index: 9;}
+.s_show {z-index: 99;}
+.sWarp .ico { float: right; margin: -15px 0px 0 0;}
+.sItemed { height: 28px; line-height: 28px; padding: 0 10px; border: 1px solid #e3ecf2; width: 210px;}
+.s_select { cursor: pointer;}
+.sltedCnt { color: #2c97fb;overflow: hidden;text-overflow: ellipsis; white-space: nowrap; display: block;}
+.s_opts { background-color:#FFF; border: 1px solid #E3ECF2; position: absolute; top: 29px; width: 230px; display: none;}
+.s_opt { padding: 0 10px; height: 28px; line-height: 28px; cursor: pointer; color: #94a1ad;text-overflow:ellipsis;-o-text-overflow:ellipsis; overflow: hidden;white-space:nowrap;}
+.s_opt:hover,.s_opted {background: #FCFCFC;}
+.sInput { width: 100%; margin: 0; background: none; border: 0; height: 28px; line-height: 28px;}
+.s_tip { margin: -10px 0 10px 0; padding-left: 70px; color: #94a1ad; visibility: hidden;}
+.fxTpye { display: none;}
+.opacityFile { opacity: 0;filter:Alpha(Opacity=0); position: absolute; width: 100px; cursor: pointer;}
+
+.noPd { padding: 0; width: 230px;}
+.noPd input { text-indent: 11px; width: 232px; margin: 0 0 0 -1px; }
+
+.popUpForm .s_opts { max-height: 190px; overflow-y: auto;}
+
+.itemLine { width: 100%; margin-bottom: 20px;}  
+.openForm label {height: 30px; line-height: 30px; width: 300px; text-align: right; color: #3e5062;}
+.openForm label i { color: #f25050; padding: 0 10px;}
+.openForm .itemWarp { margin-left: 20px; width: 250px;}
+.fileItem { position: relative;}
+.upFileBtn { background: url(../images/icoLabel.png) no-repeat 0 -100px; height: 30px; width: 400px; padding-left: 60px; position: absolute;top: 0; z-index: 9; line-height: 30px; color: #94a1ad;}
+.fileInput { position: absolute; top: 0; z-index: 99;opacity: 0;filter:Alpha(Opacity=0);}
+.openForm .txtitem { border-color: #b5cad7;}
+.openForm .focus {border-color: #40a3e1;}
+.openBtn {text-align: center;}
+.openBtn .buttonB { height: 38px; line-height: 38px; width: 180px;}
+.rdLabel { margin-right: 20px; display:inline-block; border: 1px solid #b5cad7; position: relative; padding: 0 10px; overflow: hidden; cursor: pointer;}
+.openForm .rdLabel { width: auto;}
+.rdLabel .opRadio { position: absolute; left: -20px;}
+.rdCur { background:url(../images/icoSlt.png) no-repeat right bottom; border-color: #2c97fb;}
+
+/*
+ * select
+ * block
+ */
+.select {position: absolute; top: 0; right: 0; padding: 5px 0; font-size: 12px; border: 1px solid transparent;}
+.sltLabel { text-align: right; margin-right: 10px;  margin-bottom: 5px; color: #2c97fb; cursor: pointer; text-align: right;}
+.icoDown {width: 10px; height: 5px; background-position: 2px -40px; margin: 0 0 2px 0;}
+.sltOption { display: none;}
+.sltOption ul li {padding: 0 10px; height: 26px; line-height: 26px; text-align: center; cursor: pointer;}
+.sltOption ul li:hover { color: #2c97fb; background: #fcfcfc;}
+.sltShow { background: #FFF; border-color: #e3ecf2;}
+.sltShow .sltT {padding: 0 10px; background: none;}
+.sltShow .icoDown {display: none;}
+/*.sltShow .sltOption { display: block;}*/
+.query { margin-bottom: 15px;}
+
+/*
+ * select
+ * dropBox
+ */
+.dropBox {position: relative;z-index: 999;}
+.dbSlted { border: 1px solid #e3ecf2; height: 28px; line-height: 28px; text-align: center; color: #2C97FB;background: #FFFFFF; padding-right: 8px; cursor: pointer;}
+.dbSltedVal {display: inline-block; margin: 0 0 0 15px; text-align: left; width: 115px; white-space: nowrap; overflow: hidden;}
+.options { background: #FCFCFC; position: absolute; top: 29px; min-width: 100%; display: none;}
+.options ul { border: 1px solid #E3ECF2;}
+.options ul li {padding: 0 15px; cursor: pointer; white-space: nowrap;}
+.options ul li:hover {background: #FFF;}
+.dbSlted .icoDown { margin-bottom: 10px;}
+.dbSltedVal input { width: 100%; border: 0; color: #2C97FB;}
+.multiBox {overflow-y: auto; height: 300px;}
+.multi { position: relative; padding-left: 15px; display: block; cursor: pointer;}
+.multi::after { position: absolute; content: ""; display: block; width: 10px; height: 10px; background: url(../images/ico.png) no-repeat 0 -60px; left: 0px;  top: 9px;}
+.multied::after {background: url(../images/ico.png) no-repeat 0 -50px;}
+
+
+/*
+ * button
+ */
+.buttonA { height: 35px; line-height: 35px; text-align: center; display: block; background: #2c97fb; color: #FFF; border: 0; width: 100%; cursor: pointer; border-radius: 3px;}
+.buttonA:hover { background: #6bb5fa;}
+
+.buttonB { height: 28px; line-height: 28px; text-align: center; display: block; min-width: 100px;  color: #2c97fb; border: 1px solid #2C97FB; cursor: pointer; border-radius: 3px; display: inline-block;}
+.buttonB:hover { background: #f6f7f9;}
+.btnN { cursor: auto;}
+.btnN:hover { background: none;}
+
+.buttonC { height: 28px; line-height: 28px; text-align: center; display: block; min-width: 100px;  color: #94a1ad; border: 1px solid #d9e2ea; cursor: pointer; border-radius: 3px; display: inline-block;}
+.buttonC:hover { background: #f6f7f9;}
+
+.seachBtn { display: block; float: right; padding: 0 5px}
+.icoSeach { background: url(../images/ico.png) no-repeat -30px 0; width: 14px; height: 14px; margin-bottom: -2px;}
+.c_click .icoSeach,.icoSeach:hover { background: url(../images/ico.png) no-repeat -30px -20px; width: 14px; height: 14px; margin-bottom: -2px;}
+
+.noClick {background: #eee; cursor: auto; color: #999; border-color: #ccc;}
+.noClick:hover { background: #eee;}
+
+/*
+ * login
+ */
+.bannerLogin { background: url(../images/banner_login.jpg) no-repeat center 0; min-height: 450px;padding-bottom: 300px;}
+.loginWarp { float: right; margin: 50px 0 0 0; width: 320px; background: #FFF;}
+.loginForm .txtLabel { width:38px; height: 38px; background: url(../images/icoLabel.png) no-repeat 0 0; border-right: 1px solid #E1E6EB;}
+.loginForm .focus .txtLabel {border-color: #40a3e1;}
+.loginForm .userLabel {background-position: 0 0;}
+.loginForm .pswLabel {background-position: 0 -50px;}
+.loginForm .focus .userLabel {background-position: -50px 0;}
+.loginForm .focus .pswLabel {background-position: -50px -50px;}
+.loginForm .item { height: 38px; width: 239px;}
+.loginForm .item .txtInput,.loginForm .empty { height: 38px;line-height: 38px;}
+.loginForm .empty { text-align: center;}
+
+
+/*open*/
+.borN { border: 0;}
+.titBor { height: 8px; background-color: #b8cef1; border-radius: 10px; margin: 0 20px;}
+.borMain { border:2px dashed #f1f5fc; margin: 0 40px; border-top: 0;}
+.cntNotice { background: #fbfbfc; padding: 15px 30px; margin: 0 40px 30px; color: #94a1ad;}
+.newAccount { margin: 0 20px; padding-bottom: 150px;}
+.icoBlue { width: 8px; height: 5px; background-position: -15px -60px; margin: 0 0 1px 5px;}
+.linkSub { position: relative; cursor: pointer; z-index: 9;}
+.linkSub span { padding: 10px 0;}
+table .linkSub,table .linkSub .linkSubMain { margin: 0;}
+.linkSub:hover { text-decoration: none; border: 1px solid #e3ecf2; background: #FFF; border-bottom: 0; z-index: 99;}
+.linkSub:hover .icoBlue { background-position: -15px -65px;}
+.linkSub:hover span {}
+table .linkSubMain,.linkSubMain { position: absolute; left: -1px; width: 100%; display: none; line-height: 25px; background: #fcfcfc; border: 1px solid #e3ecf2; z-index: 999;}
+.linkSubMain a {white-space:nowrap; display: block; color: #94a1ad; font-size: 14px; text-align: left; text-indent: 20px;}
+.linkSub:hover .linkSubMain { display: block;}
+.zhover { z-index: 10;}
+
+.jgInfo { padding: 10px 0 10px 40px; height: 40px; line-height: 40px; font-size: 14px;}
+.jgInfo dl dt { float: left;}
+.jgInfo dl dd { float: left; color: #999999;}
+.icoEdit { background-position: 0 -75px; width: 11px; height: 13px; margin: 0 0 -2px 5px;}
+.icoEdit:hover { background-position: 0 -88px;}
+
+/*
+ * page
+ */
+.pagesWarp { overflow: hidden; padding: 15px 0;}
+.pages { float: right;}
+.pLink { color: #2c97fb; padding-left: 20px;}
+.page {display: inline-block;}
+.curPage { padding-left: 20px;}
+
+/*
+ * footer
+ */
+.footer .equal { padding: 40px 0 45px; font-size: 16px;}
+.footer .linkB2 { color: #3e5062;}
+.copyRight {font-size: 14px; color: #92a1af; line-height: 30px; text-align: center; background: #eef4f8; padding: 25px 0;}
+.crLink { color: #92a1af;}
+.crLink:hover {text-decoration: underline;}
+.footer .equal ul li { text-align: center; color: #3e5062;}
+
+
+
+/*
+ * popUp
+ */
+.popUp { position: fixed; top: 0; left: 0; z-index: 999999; width: 100%; height: 100%; display: none; font-size: 12px;}
+.popUpWarp{background-color: rgba(0,0,0,0.5); padding: 5px;  position: absolute; top: 50%; left: 50%;}
+.popUpMain { background: #FFF; min-width: 350px;}
+.popUpCnt { min-height: 95px;}
+.popClose { background: #b8c2cc; color: #e6f3ff; width: 16px; height: 16px; float: right; margin: 7px 0 0 0; text-align: center; display: block; line-height: 16px; border-radius: 50%;}
+.popClose:hover { background-color: #FFF;}
+.popUpTop { height: 30px; background-color: #e6f3ff; padding: 0 10px;}
+.popUpT { display: inline-block; line-height: 30px; color: #3E5062;}
+.popTip { padding: 30px 10px 0px;}
+.popIco { display: block;}
+.popIco img { display: block; margin: 0 auto;}
+.popTipTxt { text-align: center; display: block; padding: 5px 10px 0; color: #3e5062;}
+.warn .popTipTxt { color: #e03030;}
+.popUpfoot { padding: 15px 10px 20px; text-align: center;}
+.popUpfoot .buttonB,.popUpfoot .buttonC { min-width: 75px;}
+.space { display: inline-block; width: 35px;}
+
+
+
+
+/*
+ * popUp
+ **提示框 
+ */
+.hint { position: fixed;background-color: rgba(0,0,0,0.8); z-index: 99999999; top: 50%; left: 50%; max-width: 315px; border-radius: 20px; display: none;}
+.hintMain {padding-top: 20px;}
+.hinttext {color: #FFF; font-size: 20px; margin:0 20px; padding:0 0 20px; text-align: center;}
+
+
+
+
+
+
+
+
+
+/*垂直翻转*/
+.flipy,.allType:hover .icoDown {
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
+
+/*水平翻转*/
+.flipx {
+    -moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+
+/*
+ * animate
+ * 转圈
+ */
+
+@keyframes around{
+	0%{transform:rotate(0deg);}
+	100%{transform:rotate(360deg);}
+}
+
+@-ms-keyframes around{
+	0%{-ms-transform: rotate(0deg);}
+	100%{-ms-transform: rotate(360deg);}
+}
+@-webkit-keyframes around{
+	0%{-webkit-transform: rotate(0deg);}
+	100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes around{
+	0%{-moz-transform: rotate(0deg);}
+	100%{-moz-transform: rotate(360deg);}
+}
+
+
+/*
+ * animate
+ * 大小
+ */
+
+@keyframes size{
+	0%{background-size: 50%;}
+	100%{background-size: 100%;}
+}
+@-ms-keyframes size{
+	0%{background-size: 50%;}
+	100%{background-size: 100%;}
+}
+@-webkit-keyframes size{
+	0%{background-size: 50%;}
+	100%{background-size: 100%;}
+}
+@-moz-keyframes size{
+	0%{background-size: 50%;}
+	100%{background-size: 100%;}
+}
+
+
+/*
+ * animate
+ * 加载
+ */
+.cube01 {animation: wave 2s linear infinite;}
+.cube02 {animation: wave2 2s linear infinite;}
+.cube03 {animation: wave3 2s linear infinite;}
+@keyframes wave{
+	0%{opacity: 0;}
+	100%,32%{opacity: 1;}
+}
+@-ms-keyframes wave{
+	0%{opacity: 0;}
+	100%,32%{opacity: 1;}
+}
+@-webkit-keyframes wave{
+	0%{opacity: 0;}
+	100%,32%{opacity: 1;}
+}
+@-moz-keyframes wave{
+	0%{opacity: 0;}
+	100%,32%{opacity: 1;}
+}
+
+@keyframes wave2{
+	0%,32%{opacity: 0;}
+	100%,64%{opacity: 1;}
+}
+@-ms-keyframes wave2{
+	0%,32%{opacity: 0;}
+	100%,64%{opacity: 1;}
+}
+@-webkit-keyframes wave2{
+	0%,32%{opacity: 0;}
+	100%,64%{opacity: 1;}
+}
+@-moz-keyframes wave2{
+	0%,32%{opacity: 0;}
+	100%,64%{opacity: 1;}
+}
+
+@keyframes wave3{
+	0%,64%{opacity: 0;}
+	100%,96%{opacity: 1;}
+}
+@-ms-keyframes wave3{
+	0%,64%{opacity: 0;}
+	100%,96%{opacity: 1;}
+}
+@-webkit-keyframes wave3{
+	0%,64%{opacity: 0;}
+	100%,96%{opacity: 1;}
+}
+@-moz-keyframes wave3{
+	0%,64%{opacity: 0;}
+	100%,96%{opacity: 1;}
+}
+
+
+/*
+ * 逐步进入
+ */
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight
+}
+
+@-moz-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+
+@-webkit-keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(30px);
+		transform: translateX(30px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+
+@keyframes fadeInRight {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(30px);
+		-ms-transform: translateX(30px);
+		transform: translateX(30px)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0)
+	}
+}
+
+.animation {
+	opacity: 0;
+	filter: alpha(Opacity=100);
+	-webkit-animation-duration: .5s;
+	-webkit-animation-delay: .3s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-duration: .5s;
+	-moz-animation-delay: .3s;
+	-moz-animation-timing-function: ease;
+	-moz-animation-fill-mode: both;
+	-ms-animation-duration: .5s;
+	-ms-animation-delay: .3s;
+	-ms-animation-timing-function: ease;
+	-ms-animation-fill-mode: both;
+	animation-duration: .5s;
+	animation-delay: .3s;
+	animation-timing-function: ease;
+	animation-fill-mode: both
+}
+
+.animation-delay-0 {
+	-moz-animation: fadeInRight .5s 0s ease forwards;
+	-webkit-animation: fadeInRight .5s 0s ease forwards;
+	animation: fadeInRight .5s 0s ease forwards
+}
+
+.animation-delay-1 {
+	-moz-animation: fadeInRight .5s .06s ease forwards;
+	-webkit-animation: fadeInRight .5s .06s ease forwards;
+	animation: fadeInRight .5s .06s ease forwards
+}
+
+.animation-delay-2 {
+	-moz-animation: fadeInRight .5s .12s ease forwards;
+	-webkit-animation: fadeInRight .5s .12s ease forwards;
+	animation: fadeInRight .5s .12s ease forwards
+}
+
+.animation-delay-3 {
+	-moz-animation: fadeInRight .5s .18s ease forwards;
+	-webkit-animation: fadeInRight .5s .18s ease forwards;
+	animation: fadeInRight .5s .18s ease forwards
+}
+
+.animation-delay-4 {
+	-moz-animation: fadeInRight .5s .24s ease forwards;
+	-webkit-animation: fadeInRight .5s .24s ease forwards;
+	animation: fadeInRight .5s .24s ease forwards
+}
+
+.animation-delay-5 {
+	-moz-animation: fadeInRight .5s .3s ease forwards;
+	-webkit-animation: fadeInRight .5s .3s ease forwards;
+	animation: fadeInRight .5s .3s ease forwards
+}
+
+.animation-delay-6 {
+	-moz-animation: fadeInRight .5s .36s ease forwards;
+	-webkit-animation: fadeInRight .5s .36s ease forwards;
+	animation: fadeInRight .5s .36s ease forwards
+}
+
+.animation-delay-7 {
+	-moz-animation: fadeInRight .5s .42s ease forwards;
+	-webkit-animation: fadeInRight .5s .42s ease forwards;
+	animation: fadeInRight .5s .42s ease forwards
+}
+
+.animation-delay-8 {
+	-moz-animation: fadeInRight .5s .48s ease forwards;
+	-webkit-animation: fadeInRight .5s .48s ease forwards;
+	animation: fadeInRight .5s .48s ease forwards
+}
+
+.animation-delay-9 {
+	-moz-animation: fadeInRight .5s .54s ease forwards;
+	-webkit-animation: fadeInRight .5s .54s ease forwards;
+	animation: fadeInRight .5s .54s ease forwards
+}
+.animation-delay-10 {
+	-moz-animation: fadeInRight .5s .60s ease forwards;
+	-webkit-animation: fadeInRight .5s .60s ease forwards;
+	animation: fadeInRight .5s .60s ease forwards
+}
+.animation-delay-11 {
+	-moz-animation: fadeInRight .5s .66s ease forwards;
+	-webkit-animation: fadeInRight .5s .66s ease forwards;
+	animation: fadeInRight .5s .66s ease forwards
+}
+.animation-delay-12 {
+	-moz-animation: fadeInRight .5s .72s ease forwards;
+	-webkit-animation: fadeInRight .5s .72s ease forwards;
+	animation: fadeInRight .5s .72s ease forwards
+}
+.animation-delay-13 {
+	-moz-animation: fadeInRight .5s .78s ease forwards;
+	-webkit-animation: fadeInRight .5s .78s ease forwards;
+	animation: fadeInRight .5s .78s ease forwards
+}
+.animation-delay-14 {
+	-moz-animation: fadeInRight .5s .84s ease forwards;
+	-webkit-animation: fadeInRight .5s .84s ease forwards;
+	animation: fadeInRight .5s .84s ease forwards
+}
+.animation-delay-15 {
+	-moz-animation: fadeInRight .5s .90s ease forwards;
+	-webkit-animation: fadeInRight .5s .90s ease forwards;
+	animation: fadeInRight .5s .90s ease forwards
+}
+.animation-delay-16 {
+	-moz-animation: fadeInRight .5s .96s ease forwards;
+	-webkit-animation: fadeInRight .5s .96s ease forwards;
+	animation: fadeInRight .5s .96s ease forwards
+}
+.animation-delay-17 {
+	-moz-animation: fadeInRight .5s .102s ease forwards;
+	-webkit-animation: fadeInRight .5s .102s ease forwards;
+	animation: fadeInRight .5s .102s ease forwards
+}
+
+.animation-delay-18 {
+	-moz-animation: fadeInRight .5s .108s ease forwards;
+	-webkit-animation: fadeInRight .5s .108s ease forwards;
+	animation: fadeInRight .5s .108s ease forwards
+}
+.animation-delay-19 {
+	-moz-animation: fadeInRight .5s .114s ease forwards;
+	-webkit-animation: fadeInRight .5s .114s ease forwards;
+	animation: fadeInRight .5s .114s ease forwards
+}
+.animation-delay-20 {
+	-moz-animation: fadeInRight .5s .120s ease forwards;
+	-webkit-animation: fadeInRight .5s .120s ease forwards;
+	animation: fadeInRight .5s .120s ease forwards
+}
+.animation-delay-21 {
+	-moz-animation: fadeInRight .5s .126s ease forwards;
+	-webkit-animation: fadeInRight .5s .126s ease forwards;
+	animation: fadeInRight .5s .126s ease forwards
+}
+.animation-delay-22 {
+	-moz-animation: fadeInRight .5s .132s ease forwards;
+	-webkit-animation: fadeInRight .5s .132s ease forwards;
+	animation: fadeInRight .5s .132s ease forwards
+}
+.animation-delay-23 {
+	-moz-animation: fadeInRight .5s .138s ease forwards;
+	-webkit-animation: fadeInRight .5s .138s ease forwards;
+	animation: fadeInRight .5s .138s ease forwards
+}
+.animation-delay-24 {
+	-moz-animation: fadeInRight .5s .144s ease forwards;
+	-webkit-animation: fadeInRight .5s .144s ease forwards;
+	animation: fadeInRight .5s .144s ease forwards
+}
+.animation-delay-25 {
+	-moz-animation: fadeInRight .5s .150s ease forwards;
+	-webkit-animation: fadeInRight .5s .150s ease forwards;
+	animation: fadeInRight .5s .150s ease forwards
+}
+.animation-delay-26 {
+	-moz-animation: fadeInRight .5s .156s ease forwards;
+	-webkit-animation: fadeInRight .5s .156s ease forwards;
+	animation: fadeInRight .5s .156s ease forwards
+}
+.animation-delay-27 {
+	-moz-animation: fadeInRight .5s .162s ease forwards;
+	-webkit-animation: fadeInRight .5s .162s ease forwards;
+	animation: fadeInRight .5s .162s ease forwards
+}
+.animation-delay-28 {
+	-moz-animation: fadeInRight .5s .168s ease forwards;
+	-webkit-animation: fadeInRight .5s .168s ease forwards;
+	animation: fadeInRight .5s .165s ease forwards
+}
+.animation-delay-29 {
+	-moz-animation: fadeInRight .5s .174s ease forwards;
+	-webkit-animation: fadeInRight .5s .174s ease forwards;
+	animation: fadeInRight .5s .174s ease forwards
+}
+.animation-delay-30 {
+	-moz-animation: fadeInRight .5s .180s ease forwards;
+	-webkit-animation: fadeInRight .5s .180s ease forwards;
+	animation: fadeInRight .5s .180s ease forwards
+}
+.animation-delay-31 {
+	-moz-animation: fadeInRight .5s .186s ease forwards;
+	-webkit-animation: fadeInRight .5s .186s ease forwards;
+	animation: fadeInRight .5s .186s ease forwards
+}
+.animation-delay-32 {
+	-moz-animation: fadeInRight .5s .198s ease forwards;
+	-webkit-animation: fadeInRight .5s .198s ease forwards;
+	animation: fadeInRight .5s .198s ease forwards
+}
+.animation-delay-33 {
+	-moz-animation: fadeInRight .5s .204s ease forwards;
+	-webkit-animation: fadeInRight .5s .204s ease forwards;
+	animation: fadeInRight .5s .204s ease forwards
+}
+.animation-delay-34 {
+	-moz-animation: fadeInRight .5s .210s ease forwards;
+	-webkit-animation: fadeInRight .5s .210s ease forwards;
+	animation: fadeInRight .5s .210s ease forwards
+}
+.animation-delay-35 {
+	-moz-animation: fadeInRight .5s .216s ease forwards;
+	-webkit-animation: fadeInRight .5s .216s ease forwards;
+	animation: fadeInRight .5s .216s ease forwards
+}
+.animation-delay-36 {
+	-moz-animation: fadeInRight .5s .222s ease forwards;
+	-webkit-animation: fadeInRight .5s .222s ease forwards;
+	animation: fadeInRight .5s .222s ease forwards
+}
+.animation-delay-37 {
+	-moz-animation: fadeInRight .5s .228s ease forwards;
+	-webkit-animation: fadeInRight .5s .228s ease forwards;
+	animation: fadeInRight .5s .228s ease forwards
+}
+.animation-delay-38 {
+	-moz-animation: fadeInRight .5s .234s ease forwards;
+	-webkit-animation: fadeInRight .5s .234s ease forwards;
+	animation: fadeInRight .5s .234s ease forwards
+}
+.animation-delay-39 {
+	-moz-animation: fadeInRight .5s .240s ease forwards;
+	-webkit-animation: fadeInRight .5s .240s ease forwards;
+	animation: fadeInRight .5s .240s ease forwards
+}
+.animation-delay-40 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-41 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-42 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-43 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-44 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-45 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-46 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-47 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-48 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-49 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-50 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-51 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-52 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-53 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-54 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-55 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-56 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-57 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-58 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-59 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+.animation-delay-60 {
+	-moz-animation: fadeInRight .5s .246s ease forwards;
+	-webkit-animation: fadeInRight .5s .246s ease forwards;
+	animation: fadeInRight .5s .246s ease forwards
+}
+
+.animation2 {
+	visibility: hidden
+}
+
+/*
+ * 
+ */
+@media screen and (max-width: 1125px) {
+}
+@media screen and (max-width: 990px) {
+}
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 460px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

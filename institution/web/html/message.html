@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1, minimum-scale=1,target-densitydpi=device-width" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link href="../css/institution.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/laydate.dev.js"></script>
+	<script type="text/javascript" src="../js/institution.js"></script>
+	<title>消息中心</title>
+</head>
+<body>
+	<div class="container">
+		<!--登陆前-->
+		<!--<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<a href="login.html" class="linkT1">登陆</a>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+				</div>
+			</div>
+		</header>-->
+		<!--登陆前结束-->
+		<!--登陆后-->
+		<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<span class="welcome"><i class="ico icoWel"></i>欢迎您！华夏证券</span>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+					<div class="nav">
+						<ul>
+							<li><a href="query.html" class="navLink">持仓查询</a></li>
+							<li><a href="product.html" class="navLink">产品市场</a></li>
+							<li class="dropMenu">
+								<span class="navLink">
+									交易
+								</span>
+								<span class="subMenu">
+									<a href="transaction-order.html" class="subLink">交易下单</a>
+									<a href="transaction-query.html" class="subLink">交易查询</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--登陆后结束-->
+		<div class="main">
+			<div class="Side">
+				<div class="leftBar">
+					<div class="userWarp">
+						<div class="photo"><img src="../images/photo.jpg" alt=""/></div>
+						<div class="userName">
+							<span class="dpyIB">交易员</span>
+							<span class="dpyIB">张三</span>
+						</div>
+						<div class="fixed">
+							<a href="javascript:void(0);" class="icoRound icoUser"></a>
+							<a href="javascript:void(0);" class="icoRound icoCo"></a>
+							<a href="javascript:void(0);" class="icoRound icoset"></a>
+						</div>
+					</div>
+					<!--userWarp end-->
+					<div class="subNav">
+						<ul>
+							<li><a href="query.html" class="subA">持仓查询<i class="ico icoR"></i></a></li>
+							<li><a href="product.html" class="subA">产品市场<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-order.html" class="subA">交易下单<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-query.html" class="subA">交易查询<i class="ico icoR"></i></a></li>
+							<li><a href="message.html" class="subA cur">消息中心<i class="ico icoR"></i></a></li>
+							<li><a href="open-account.html" class="subA">机构开户<i class="ico icoR"></i></a></li>
+							<li><a href="authority-management.html" class="subA">权限管理<i class="ico icoR"></i></a></li>
+						</ul>
+					</div>
+					<!--subNav end-->
+				</div>
+				<!--leftBar end-->
+				<div class="rightBar">
+					<div class="content">
+						<div class="newestNotice slideDown">
+							<span class="close">X</span>
+							<span class="date">2016-02-24</span>
+							<span class="horn">最新公告：春节期间基金申购赎回、小金库快赎业务公告</span> 
+						</div>
+						<!--newestNotice end-->
+						<div class="pT10">
+							<div class="titBlk">
+								<div class="titlist">
+									<ul>
+										<li><span class="tabOption">消息中心</span></li>
+									</ul>
+								</div>
+							</div>
+							<!--titBlk end-->
+						</div>
+						<!--end pT20-->
+						<div class="tableWarp tabContent"> 
+							<div class="tabCnts">
+								<div class="tabCnt">
+									<!--<div class="nodata">
+										<span>暂无数据</span>
+									</div>-->
+									<div class="ptype dlBlk">
+										<dl>
+											<dt>账户全称：</dt>
+											<dd>
+												<div class="dropBox">
+													<div class="dbSlted">
+														<span class="dbSltedVal">全部</span>
+														<i class="ico icoDown"></i>
+													</div>
+													<div class="options optBox">
+														<ul>
+															<li>货币市场基金-A类</li>
+															<li>货币市场基金-B类</li>
+															<li>货币市场基金</li>
+														</ul>
+													</div>
+												</div>
+												<!--dropBox end-->
+											</dd>
+											<dd class="label">日历</dd>
+											<dd>
+												<div class="itemWarp">
+													<div class="txtitem">
+														<div class="item">
+															<input type="text" name="" id="startDate" value="" placeholder="起始日期" class="txtInput startDate" />
+															<i class="ico icoDate"></i>
+														</div>
+													</div>
+												</div>
+												<!--itemWarp end-->
+											</dd>
+											<dd class="label">至</dd>
+											<dd>
+												<div class="itemWarp">
+													<div class="txtitem">
+														<div class="item">
+															<input type="text" name="" id="endDate" value="" placeholder="结束日期" class="txtInput endDate" />
+															<i class="ico icoDate"></i>
+														</div>
+													</div>
+												</div>
+												<!--itemWarp end-->
+											</dd>
+											<dd><a href="javascript:void(0);" class="buttonB">查询</a></dd>
+										</dl>
+									</div>
+									<!--ptype end-->
+									<div class="message">
+										<table border="0" cellspacing="1" cellpadding="0" class="table mTable">
+											<thead>
+												<tr>
+													<th width="100" align="left" style="padding-left: 20px;">时间</th>
+													<th>内容</th>
+													<th width="80">类型</th>
+													<th width="80">附件</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">000342 华夏货币基金申购确认成功，申购金额10,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">000342 华夏货币基金申购确认成功，申购金额10,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">000342 华夏货币基金申购确认成功，申购金额10,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">货币基金申购确认成功，申购金额10,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt"> 华夏货币基金申购确认成功，申购金额10,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+												<tr>
+													<td>2016-09-12<br />09:23</td>
+													<td class="tdCnt">000342 华夏货币基金申,000,000.00元，确认申购份额1,232,323.23份，本次申购手续费5000.00元。</td>
+													<td>申购</td>
+													<td><a href="../doc/凭证.pdf" class="linkT1" target="_blank">查看</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="pagesWarp">
+										<div class="pages">
+											<a href="javascript:void(0);" class="page pLink"><< 首页</a>
+											<a href="javascript:void(0);" class="page pLink">< 上一页</a>
+											<span class="page pSpan curPage">1-20</span>条，共
+											<span class="page pSpan">564</span>条
+											<a href="javascript:void(0);" class="page pLink">下一页></a>
+											<a href="javascript:void(0);" class="page pLink">尾页>></a>
+										</div>
+									</div>
+									<!--分页结束-->
+								</div>
+								<!--消息中心tabCnt end -->
+							</div>
+							<!--tabCnts end-->
+						</div>
+						<!--tableWarp end-->
+					</div>
+					<!--content end-->
+				</div>
+				<!--rightBar end-->
+			</div>
+			<!--Side end-->
+		</div>
+		<!--main end-->
+	</div>
+	<footer class="footer">
+		<div class="maxW">
+			<div class="equal">
+				<ul class=" fixed">
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">基金销售资格</span>
+								<span class="sBk"><img src="../images/imgF.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管机构</span>
+								<span class="sBk"><img src="../images/imgF-02.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管银行</span>
+								<span class="sBk"><img src="../images/imgF-03.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">自律组织</span>
+								<span class="sBk"><img src="../images/imgF-04.jpg"/></span>
+							</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!--equal end-->
+		</div>
+		<!--maxW end-->
+		<div class="copyRight">
+			<a href="login.html" class="crLink">联系我们</a>｜<a href="login.html" class="crLink">投资人权益须知</a>｜<a href="login.html" class="crLink">基金销售适用性规则</a>｜<a href="login.html" class="crLink">风险提示</a>｜<a href="login.html" class="crLink">免责声明</a>｜<a href="login.html" class="crLink">资质证明</a>
+			<br />
+			北京汇成基金销售有限公司 版权所有 All Rights Reserved. ICP 备案登记证编号:粤ICP备15062379号-1<br />
+			地址：北京市海淀区中关村E世界A座1108室  邮编：510308
+		</div>
+	</footer>	
+
+</body>
+</html>
+
+<script type="text/javascript">
+$(document).ready(function(e){
+	/*
+	 * 日历
+	 * 交易申请
+	 */
+	laydate({
+        elem: '.startDate',
+        choose: function(datas){ //选择日期完毕的回调
+			console.log('得到：'+startDate);
+	    }
+    });
+
+	laydate({
+        elem: '.endDate',
+        choose: function(datas){ //选择日期完毕的回调
+			console.log('得到：'+endDate);
+	    }
+    });
+	
+	
+	//分类选择
+	$(".options ul li").on("click",function(e){
+		var sltVal = $(this).html();
+		$(this).parents(".options").hide().siblings(".dbSlted").children(".dbSltedVal").html(sltVal);
+	});	
+	//导入下单
+	$(document).on("click",".importBtn",function(){
+		//popUp(".popUpImport","您导入的文件格式不正确，请重新导入","导入下单指令","warn");//导入失败
+		popUp(".popUpImport","20133233222","导入下单指令","","ico");//导入成功
+	});
+	//人工下单
+	$(document).on("click",".orderBtn",function(){
+		popUp(".popUpForm");//导入失败
+	});
+	//关闭popUp
+	$(document).on("click",".popClose",function(){
+		closePopUp();
+	});
+	//弹出的公告
+	setTimeout(function(){slideDown(".newestNotice",1000)},1000);
+	//导入成功提示
+	setTimeout(function(){slideDown(".importResult",500)},2000);
+	
+	//下拉选择
+	$(".s_opt").on("click",function(){
+		var thisVal = $(this).attr("thisVal");
+		var thisShow = $(this).html();
+		$(this).addClass("s_opted").siblings().removeClass("s_opted").parents(".s_opts").hide().siblings(".sItemed").children(".sltedCnt").html(thisShow).siblings(".valInput").val(thisVal);
+	})
+	/*级联*/
+	$(".fxList").on("click","li",function(){
+		var thisLi = $(this).index();
+		$(".fxTpyeWarp").children(".fxTpye").eq(thisLi).show().siblings().hide();
+		console.log(thisLi);
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,a {padding: 0;margin: 0;  outline:none;word-wrap:break-word;}
+body{font-family:'FZLanTingHeiS-R-GB',arial; color:#333; font-size:30px;}
+p { margin:0 0 20px 0; text-indent:0px;}
+table {border-collapse: collapse;border-spacing: 0;}
+fieldset,img {border: 0; display:block;}
+ol,ul {list-style: none;}
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;font-size: 100%;}
+q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+input,button,select,textarea{outline:none;} 
+input 
+input::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #999; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #999; 
+} 
+input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #999; 
+} 
+input::-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #999; 
+} 
+textarea{resize:none;}
+em{ display:block;}
+a { text-decoration: none;}
+a:focus,area:focus { outline:none;}
+*:not(input):not(textarea) {
+-webkit-user-select: none; /* disable selection/Copy of UIWebView */
+-webkit-touch-callout: none; /* disable the IOS popup when long-press on a link */
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent; 
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+-webkit-appearance: none;
+}
+/**{-moz-user-select:none;-webkit-user-select:none}*/
+body div ul li.last { border-bottom:0;}

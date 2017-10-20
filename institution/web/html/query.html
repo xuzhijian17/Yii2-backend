@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1, minimum-scale=1,target-densitydpi=device-width" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link href="../css/institution.css" rel="stylesheet">
+	<link href="../css/animation.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/institution.js"></script>
+	<title>持仓查询</title>
+</head>
+<body>
+	<div class="container">
+		<!--登陆前-->
+		<!--<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<a href="login.html" class="linkT1">登陆</a>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+				</div>
+			</div>
+		</header>-->
+		<!--登陆前结束-->
+		<!--登陆后-->
+		<header class="header">
+			<div class="topBar">
+				<div class="maxW">
+					<span class="welcome"><i class="ico icoWel"></i>欢迎您！华夏证券</span>
+					<span class="kf"><i class="ico icokf"></i>机构客户专线：400-068-1176</span>
+				</div>
+			</div>
+			<div class="navWarp">
+				<div class="maxW">
+					<h1 class="logo">汇成基金-机构理财·原来如此简单</h1>
+					<div class="nav">
+						<ul>
+							<li><a href="query.html" class="navLink cur">持仓查询</a></li>
+							<li><a href="product.html" class="navLink">产品市场</a></li>
+							<li class="dropMenu">
+								<span class="navLink ">
+									交易
+								</span>
+								<span class="subMenu">
+									<a href="transaction-order.html" class="subLink">交易下单</a>
+									<a href="transaction-query.html" class="subLink">交易查询</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--登陆后结束-->
+		<div class="main">
+			<div class="Side">
+				<div class="leftBar">
+					<div class="userWarp">
+						<div class="photo"><img src="../images/photo.jpg" alt=""/></div>
+						<div class="userName">
+							<span class="dpyIB">交易员</span>
+							<span class="dpyIB">张三</span>
+						</div>
+						<div class="fixed">
+							<a href="javascript:void(0);" class="icoRound icoUser"></a>
+							<a href="javascript:void(0);" class="icoRound icoCo"></a>
+							<a href="javascript:void(0);" class="icoRound icoset"></a>
+						</div>
+					</div>
+					<!--userWarp end-->
+					<div class="subNav">
+						<ul>
+							<li><a href="query.html" class="subA cur">持仓查询<i class="ico icoR"></i></a></li>
+							<li><a href="product.html" class="subA">产品市场<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-order.html" class="subA">交易下单<i class="ico icoR"></i></a></li>
+							<li><a href="transaction-query.html" class="subA">交易查询<i class="ico icoR"></i></a></li>
+							<li><a href="message.html" class="subA">消息中心<i class="ico icoR"></i></a></li>
+							<li><a href="open-account.html" class="subA">机构开户<i class="ico icoR"></i></a></li>
+							<li><a href="authority-management.html" class="subA">权限管理<i class="ico icoR"></i></a></li>
+						</ul>
+					</div>
+					<!--subNav end-->
+				</div>
+				<!--leftBar end-->
+				<div class="rightBar">
+					<div class="content">
+						<div class="newestNotice slideDown">
+							<span class="close">X</span>
+							<span class="date">2016-02-24</span>
+							<span class="horn">最新公告：春节期间基金申购赎回、小金库快赎业务公告</span> 
+						</div>
+						<!--newestNotice end-->
+						<div class="pT10">
+							<div class="titBlk">
+								<div class="titlist">
+									<ul>
+										<li>持仓查询</li>
+									</ul>
+								</div>
+								<div class="select">
+									<div class="sltLabel"><span class="sltT">资产管理<i class="ico icoDown"></i></span></div>
+									<div class="sltOption">
+										<ul>
+											<li>产品-资产管理计划2号</li>
+											<li>产品产品产</li>
+											<li>产品-资产管理计划2号资产管理计划2号资产管理计划2号</li>
+											<li>产品产品产产品产品产</li>
+											<li>产品产品产品-资产管理计划2号</li>
+											<li>产品产品品品产</li>
+											<li>产品-资产管理计划2号</li>
+											<li>产品产品产产品产品产产品产品产产品产品产</li>
+										</ul>
+									</div>
+								</div>
+								<!--select end-->
+							</div>
+							<!--titBlk end-->
+						</div>
+						<!--end pT20-->
+						<!--没有数据时使用<div class="nodata"><span>暂无查询结果</span></div>-->
+						<div class="tableWarp"> 
+							<table border="0" cellspacing="0" cellpadding="0" class="table query">
+								<thead>
+									<tr>
+										<th><div class="column1">账户全称</div></th>
+										<th><div class="column2">产品简称</div></th>
+										<th><div class="column3">持仓&nbsp;|&nbsp;可用份额</div></th>
+										<th><div class="column4 s_click">参考市值(元)<i class="ico sort"></i></div></th>
+										<th><div class="column5 s_click">未付收益(元)<i class="ico sort"></i></div></th>
+										<th><div class="column6">参考盈亏&nbsp;|&nbsp;收益率</div></th>
+									</tr>
+								</thead>
+								<!--排序样式:需要排序的字段文字后面加<i class="ico sort"></i>；在div上加样式 s_click；升序在div上添加样式sort_up、降序添加sort_down-->
+								<tbody>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colRed">+100,000.00</span>
+												<span class="colRed">+12.23%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colGreen">-100,000.00</span>
+												<span class="colGreen">-12.23%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colRed">+100,000.00</span>
+												<span class="colRed">+12.23%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colGreen">-100,000.00</span>
+												<span class="colGreen">-12.23%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colRed">+100,000.00</span>
+												<span class="colRed">+12.23%</span>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><div class="column1">资管计划1号</div></td>
+										<td>
+											<div class="column2">
+												<span>华夏大盘</span>
+												<span class="colGray">000001</span>
+											</div>
+										</td>
+										<td>
+											<div class="column3">
+												<span>100,000.00</span>
+												<span>1,000,00</span>
+											</div>
+										</td>
+										<td>
+											<div class="column4">
+												<span class="colRed">23,232,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column5">
+												<span>2,322.32</span>
+											</div>
+										</td>
+										<td>
+											<div class="column6">
+												<span class="colGreen">-100,000.00</span>
+												<span class="colGreen">-12.23%</span>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<a href="javascript:void(0)" class="linkT1 ">导出查询结果</a>
+						</div>
+						<!--tableWarp end-->
+					</div>
+					<!--content end-->
+				</div>
+				<!--rightBar end-->
+			</div>
+			<!--Side end-->
+		</div>
+		<!--main end-->
+	</div>
+	<footer class="footer">
+		<div class="maxW">
+			<div class="equal">
+				<ul class=" fixed">
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">基金销售资格</span>
+								<span class="sBk"><img src="../images/imgF.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管机构</span>
+								<span class="sBk"><img src="../images/imgF-02.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">监管银行</span>
+								<span class="sBk"><img src="../images/imgF-03.jpg"/></span>
+							</a>
+						</span>
+					</li>
+					<li>
+						<span class="rBorder">
+							<a href="login.html" class="linkB2">
+								<span class="sBk mB15">自律组织</span>
+								<span class="sBk"><img src="../images/imgF-04.jpg"/></span>
+							</a>
+						</span>
+					</li>
+				</ul>
+			</div>
+			<!--equal end-->
+		</div>
+		<!--maxW end-->
+		<div class="copyRight">
+			<a href="login.html" class="crLink">联系我们</a>｜<a href="login.html" class="crLink">投资人权益须知</a>｜<a href="login.html" class="crLink">基金销售适用性规则</a>｜<a href="login.html" class="crLink">风险提示</a>｜<a href="login.html" class="crLink">免责声明</a>｜<a href="login.html" class="crLink">资质证明</a>
+			<br />
+			北京汇成基金销售有限公司 版权所有 All Rights Reserved. ICP 备案登记证编号:粤ICP备15062379号-1<br />
+			地址：北京市海淀区中关村E世界A座1108室  邮编：510308
+		</div>
+	</footer>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

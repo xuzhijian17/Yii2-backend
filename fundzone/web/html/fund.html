@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1, minimum-scale=1,target-densitydpi=device-width" />
+	<!--<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1.0, user-scalable=no">-->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection"content="telephone=no" />
+	<link type="image/x-icon" href="http://www.51jijinhui.com/jijinhui/favicon.ico" rel="shortcut icon">
+	<link href="../css/animate.min.css" rel="stylesheet">
+	<link href="../css/fundZone.css" rel="stylesheet">
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/fundZone.js"></script>
+	<script type="text/javascript" src="../js/echarts.min.js"></script>
+	<title>基金详情</title>
+</head>
+<body>
+	<div class="container">
+		<div class="mainWarp">
+			<header class="header fixed">
+				<div class="top">
+					<div class="maxW">
+						<span class="inline hotLine">客服热线：400-068-1176</span>
+						<!--登陆前-->
+						<!--<div class="notLogin">
+							<span class="inline fR">
+								<a href="index.html" class="openAccount outLink">开户</a>
+							</span>
+							<span class="inline fR userLink">
+								<a href="javascript:void(0);" class="login outLink">登陆</a>
+								<div class="loginS">
+									<ul>
+										<li><a href="https://trade.51jijinhui.com/etrading/" class="actLink">个人账户</a></li>
+										<li><a href="login.html" class="actLink">企业账户</a></li>
+									</ul>
+								</div>
+							</span>
+						</div>-->
+						<!--登陆后-->
+						<div class="userInfo">
+							<span class="inline fR">
+								<a href="login.html" class="openAccount outLink">退出</a>
+							</span>
+							<span class="inline fR userLink">
+								<a href="javascript:void(0);" class="login user">我</a>
+								<div class="loginS">
+									<ul>
+										<li><a href="my-assets.html" class="actLink">我的资产</a></li>
+										<li><a href="my-record.html" class="actLink">交易记录</a></li>
+										<li><a href="change-password.html" class="actLink">修改密码</a></li>
+									</ul>
+								</div>
+							</span>
+						</div>
+					</div>
+					<!--maxW end-->
+				</div>
+				<div class="maxW">
+					<h1><a href="index.html" class="logo"><img src="../images/logo.png" width="100%"/></a></h1>
+					<nav class="nav">
+						<a href="index.html" class="navLink">首页</a>
+						<a href="product.html" class="navLink">基金产品</a>
+						<a href="news.html" class="navLink">信息资讯</a>
+						<a href="openGuide.html" class="navLink">客服中心</a>
+						<a href="about.html" class="navLink">关于我们</a>
+					</nav>			
+				</div>
+			</header>
+			<section class="content">
+				<div class="fundWarp">
+					<div class="fundT">
+						<dl>
+							<dt>
+								<span class="fundName">汇添富恒生指数分级（QDII）</span>
+								<span class="inline col75">基金代码 160705</span>
+								<span class="inline sbor"><span class="fundTag tagGp">&nbsp;</span></span>
+								<span class="inline risk risk02">高风险</span>
+							</dt>
+							<dd>
+								<span class="fundlable starBtm">晨星评级</span>
+								<span class="stars stars04"></span><!--星星个数添加样式 stars01，几个星星就是零几，没有星星就不加样式-->
+							</dd>
+							<dd>
+								<span class="fundlable">日净值增长率</span>
+								<span class="fundVol">1.2346 </span>
+							</dd>
+							<dd>
+								<span class="fundlable">最新净值(2016-03-03 )</span>
+								<span class="fundVol">0.9720 </span>
+							</dd>
+						</dl>
+					</div>
+					<!--fundT end-->
+					<div class="fixed">
+						<div class="btn2 w150 fL"><a class="submit2" href="apply-for-purchase.html">申购</a></div>
+					</div>
+					
+					<div class="chart">
+						<div class="dateList fixed">
+							<ul>
+								<li><a href="javascript:void(0);" class="date oneMonth cur">一个月</a></li>
+								<li><a href="javascript:void(0);" class="date thrMonth">三个月</a></li>
+								<li><a href="javascript:void(0);" class="date sixMonth">六个月</a></li>
+								<li><a href="javascript:void(0);" class="date tweMonth">一年</a></li>
+								<li><a href="javascript:void(0);" class="date allMonth">成立以来</a></li>
+							</ul>
+						</div>
+						<div class="chartWarp" id="chartWarp"></div>
+						<!--<img src="../images/Chart.jpg"/>-->
+					</div>
+				</div>
+			</section>
+			<!--section content end-->
+			<section class="content" style="margin-bottom: 50px;">
+				<div class="tabWarp fixW">
+					<div class="tabList w720">
+						<ul>
+							<li class="tabCur"><span class="">基金经理</span></li>
+							<li><span class="">交易须知</span></li>
+							<li><span class="">基金概况</span></li>
+							<li><span class="">持仓信息</span></li>
+							<li><span class="">基金公告</span></li>
+							<li><span class="">基金分红</span></li>
+						</ul>
+					</div>
+					<!--tabList end-->
+					<div class="tabCnts">
+						<div class="tabCnt">
+							<div class="manager mB20">
+								<div class="mgrPhoto">
+									<img src="../images/photo.jpg"/>
+								</div>
+								<div class="mgrInfo">
+									<dl>
+										<dt>
+											<span class="mgrName">赵某某</span>
+											<span class="mgrDate">2014-04-23至今</span>
+										</dt>
+										<dd>赵某某先生，生于1972年，四川大学工商管理学院管理学（金融投资研究方向）博士。历任美国晨星公司投资顾问部门数量分析师、招商银行博士后工作站博士后研究员。2007年8月加入长盛基金管理公司，任金融工程研究员、产品开发经理、首席产品开发师和金融工程与量化投资部副总监。2013年4月24日任上证市值百强交易型开放式指数证券投资基金的基金经理。2013年5月10日至2014年7月3日任长盛上证市值百强交易型开放式指数证券投资基金联接基金的基金经理。2014年7月3日任长盛电子信息主题灵活配置混合型证券投资基金的基金经理。2015年5月14日任长盛战略新兴产业灵活配置混合型证券投资基金的基金经理。2015年7月11日任长盛中小盘精选混合型证券投资基金的基金经理。2015年8月13日任长盛上证50指数分级证券投资基金的基金经理。2015年9月24日任长盛创新先锋灵活配置混合型证券投资基金的基金经理。2016年2月3日任长盛医疗行业量化配置股票型证券投资基金的基金经理。</dd>
+									</dl>
+								</div>
+							</div>
+							<!--manager end-->
+							<h2 class="h2T2">历任情况</h2>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableB">
+								<thead>
+									<tr>
+										<th>基金代码</th>
+										<th>基金名称</th>
+										<th>基金类型</th>
+										<th>任期时间</th>
+										<th>任期回报</th>
+										<th>同类平均</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>080012</td>
+										<td>长盛电子信息</td>
+										<td>混合型</td>
+										<td>2014-04-23至今</td>
+										<td>56.75%</td>
+										<td>7.07</td>
+									</tr>
+									<tr>
+										<td>080012</td>
+										<td>长盛电子信息</td>
+										<td>混合型</td>
+										<td>2014-04-23至今</td>
+										<td>56.75%</td>
+										<td>7.07</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--tabCnt end-->
+						<div class="tabCnt">
+							<h2 class="h2T2">买入须知</h2>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableD mB30">
+								<tbody>
+									<tr>
+									  <td width="16.66%" bgcolor="#f6f6f6">收费方式</td>
+										<td width="16.66%" bgcolor="#FFFFFF">前端收费</td>
+										<td width="16.66%" bgcolor="#F6F6F6">申购状态</td>
+										<td width="16.66%" bgcolor="#FFFFFF">开放申购</td>
+										<td width="16.66%" bgcolor="#F6F6F6">管理费</td>
+										<td width="16.66%" bgcolor="#FFFFFF">1.5%（每年）</td>
+									</tr>
+									<tr>
+									  <td bgcolor="#f6f6f6">起始金额</td>
+										<td bgcolor="#FFFFFF">100元</td>
+										<td bgcolor="#F6F6F6">赎回状态</td>
+										<td bgcolor="#FFFFFF">开放赎回</td>
+										<td bgcolor="#F6F6F6">托管费</td>
+										<td bgcolor="#FFFFFF">0.25%（每年）</td>
+									</tr>
+								</tbody>
+							</table>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableB">
+								<thead>
+									<tr>
+										<th colspan="2">申购费率</th>
+										<th colspan="2">赎回费率</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td width="25%">申购金额（RMB）</td>
+										<td width="25%">费率</td>
+										<td width="25%">持有期限（Dur）</td>
+										<td width="25%">费率</td>
+									</tr>
+									<tr>
+										<td>RMB<100万</td>
+										<td><span class="del">1.2%</span><span>0.6%</span></td>
+										<td>Dur<1年</td>
+										<td>0.50%</td>
+									</tr>
+									<tr>
+										<td>100万<RMB<500万</td>
+										<td><span class="del">1.2%</span><span>0.6%</span></td>
+										<td>1年<Dur<2年</td>
+										<td>0.30%</td>
+									</tr>
+									<tr>
+										<td>RMB≥1000万</td>
+										<td>1000元/笔</td>
+										<td>Dur≥2年</td>
+										<td>0.00%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--tabCnt end-->
+						<div class="tabCnt">
+							<h2 class="h2T2">基本信息</h2>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableD mB30">
+								<tbody>
+									<tr>
+									    <td width="16.66%" bgcolor="#f6f6f6">成立日期</td>
+										<td bgcolor="#FFFFFF">2013-05-10</td>
+									</tr>
+									<tr>
+									  	<td bgcolor="#f6f6f6">基金类型</td>
+										<td bgcolor="#FFFFFF">混合型</td>
+									</tr>
+									<tr>
+									  	<td bgcolor="#f6f6f6">资产规模</td>
+										<td bgcolor="#FFFFFF">25.61亿（2016-03-31）</td>
+									</tr>
+									<tr>
+									  	<td bgcolor="#f6f6f6">基金公司</td>
+										<td bgcolor="#FFFFFF">长盛基金管理有限公司</td>
+									</tr>
+									<tr>
+									  	<td bgcolor="#f6f6f6">托管银行</td>
+										<td bgcolor="#FFFFFF">中国银行股份有限公司</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="txtBlk">
+								<h2 class="h2T2">基本信息</h2>
+								<p>本基金主要投资于全球证券市场中具有良好流动性的金融工具,包括债券、基金、资产支持证券、货币市场工具、结构性投资产品、信用违约互换(CDS)等金融衍生品以及中国证监会允许本基金投资的其他金融工具。</p>								
+							</div>
+							<div class="txtBlk">
+								<h2 class="h2T2">投资理念</h2>
+								<p>暂无数据</p>
+							</div>
+							<div class="txtBlk pB0">
+								<h2 class="h2T2">投资策略</h2>
+								<p>1. 大类资产配置本基金通过深入研究全球宏观经济和区域经济环境,把握全球资本市场的变化趋势,结合量化模型及宏观策略分析确定固定收益类资产、权益类资产、商品类资产、现金及货币市场工具等大类资产的配置比例。本基金投资全球证券市场的债券类金融资产不低于基金资产的80%。</p>
+								<p>2. 债券投资策略本基金债券资产投资于中国企业境外高收益债券的比例不低于固定收益类资产的80%。本基金在债券投资中将根据对经济周期和市场环境的把握,基于对财政政策、货币政策的深入分析以及对各行业的动态跟踪,灵活运用久期策略、收益率曲线策略、信用债策略等多种投资策略,构建债券资产组合,并根据对债券市场、债券收益率曲线以及各种债券价格的变化的预测,动态的对投资组合进行调整。同时,由于高收益债券的收益率与其发行主体的基本面联系非常紧密,本基金将着重对债券发行主体进行深入的基本面研究。</p>
+								<p>(1)久期策略本基金将基于对宏观经济政策、通货膨胀和各行业、各公司基本面的分析,预测各债券未来的收益率变化趋势,并确定相应的久期目标,合理控制收益率风险。在预期收益率整体上升时,降低组合的平均久期;在预期收益率整体下降时,提高组合的平均久期。在通胀预期较为强烈的时期,提高短久期债券的配置比例,以有效应对加息预期,降低组合风险。</p>
+								<p>(2)收益率曲线策略在组合的久期配置确定以后,本基金将通过对收益率曲线的研究,分析和预测收益率曲线可能发生的形状变化,采用子弹型策略、哑铃型策略或梯形策略,在长期、中期和短期债券间进行配置,以从长、中、短期债券的相对价格变化中获利。目前,大部分中国企业境外发行的债券的久期集中在2到5年,只有少量个券的久期大于15年,因此收益率曲线的策略将主要运用于中短期债券。</p>
+								<p>(3)信用债策略本基金债券资产主要投资于中国企业在境外发行的债券。因此,信用债策略是本基金固定收益资产投资的核心策略。本基金将通过分析宏观经济周期、市场资金结构和流向、信用利差的历史水平等因素,判断当前信用债的相对投资价值、风险以及信用利差曲线的未来走势,确定信用债券的配置。具体的投资策略包括:</p>
+								<p>l 基本面分析采用基本面分析、相对价值分析为主的策略。基金管理人将利用多种基本面分析指标对企业的竞争力和债券定价水平进行详尽的考察和评价,并通过对市场变动趋势的把握,选择适当的投资时机,进行债券组合的投资。</p>
+								<p>基本面因素主要包括企业的产品结构、市场份额、产量增长、生产成本、成本增长、利润增长、人员素质、治理、负债、现金流、净现值等,上述因素反映了企业的杠杆化比例,盈利能力和现金流状况。通过对此类基本面因素数据的筛选和加工,基金管理人将建构较完整的企业数据库。</p>
+							</div>
+						</div>
+						<!--tabCnt end-->
+						<div class="tabCnt">
+							<h2 class="h2T2">资产配置</h2>
+							<div class="chart mB20">
+								<div class="chartpie" id="chartpie">
+									
+								</div>
+								<!--<img src="../images/imgCc.jpg"/>-->
+							</div>
+							<h2 class="h2T2">行业配置</h2>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableB mB20">
+								<thead>
+									<tr>
+										<th width="50%">行业</th>
+										<th>占比</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>行业投资合计</td>
+										<td>93.56%</td>
+									</tr>
+									<tr>
+										<td>采矿业</td>
+										<td>93.56%</td>
+									</tr>
+									<tr>
+										<td>行业投资合计</td>
+										<td>93.56%</td>
+									</tr>
+									<tr>
+										<td>采矿业</td>
+										<td>93.56%</td>
+									</tr>
+								</tbody>
+							</table>
+							<!--table end-->
+							<h2 class="h2T2">股票名称</h2>
+							<table border="0" cellspacing="1" cellpadding="0" class="tableB">
+								<thead>
+									<tr>
+										<th width="25%">股票名称</th>
+										<th width="25%">占资产净值比例</th>
+										<th width="25%">持有股数</th>
+										<th width="25%">持有市值</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>光环新网（300383）</td>
+										<td>2.56%</td>
+										<td>00000000</td>
+										<td>00000000</td>
+									</tr>
+									<tr>
+										<td>光环新网（300383）</td>
+										<td>2.56%</td>
+										<td>00000000</td>
+										<td>00000000</td>
+									</tr>
+									<tr>
+										<td>光环新网（300383）</td>
+										<td>2.56%</td>
+										<td>00000000</td>
+										<td>00000000</td>
+									</tr>
+									<tr>
+										<td>光环新网（300383）</td>
+										<td>2.56%</td>
+										<td>00000000</td>
+										<td>00000000</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--tabCnt end-->
+						<div class="tabCnt">
+							<div class="list">
+								<ul>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">苏宁基金销售有限公司为销售机构并景顺长城基金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">景顺长苏宁基金销售有限公司为销售机构并苏宁基金销售有限公司为销售机构并城基金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">城基景顺长金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">苏宁基金销售有限公司为销售机构并景顺长城基金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">景顺长苏宁基金销售有限公司为销售机构并苏宁基金销售有限公司为销售机构并城基金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+									<li>
+										<span class="listDate">2016-07-08</span>
+										<span class="listT">
+											<a href="notice_details.html">城基景顺长金管理有限公司关于旗下部分基金新增南京苏宁基金销售有限公司为销售机构并开通基金转换业务</a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--tabCnt end-->
+						<div class="tabCnt">
+							<table border="0" cellspacing="1" cellpadding="0" class="tableB">
+								<thead>
+									<tr>
+										<th>权益登记日</th>
+										<th>红利发放日</th>
+										<th>分红</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2016-05-23</td>
+										<td>2016-05-23</td>
+										<td>2.34元/10份</td>
+									</tr>
+									<tr>
+										<td>2016-05-23</td>
+										<td>2016-05-23</td>
+										<td>2.34元/10份</td>
+									</tr>
+									<tr>
+										<td>2016-05-23</td>
+										<td>2016-05-23</td>
+										<td>2.34元/10份</td>
+									</tr>
+									<tr>
+										<td>2016-05-23</td>
+										<td>2016-05-23</td>
+										<td>2.34元/10份</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--tabCnt end-->
+					</div>
+					<!--tabCnts end-->
+				</div>
+				<!--tabWarp end-->
+			</section>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="maxW fixed">
+			<div class="footerCantact">
+				<div class="fs36">400-619-9059</div>
+				<div class="col96">工作日 9:00-18:00</div>
+				<div class="col96">邮箱：<a href="mailto:kefu@51jijinhui.com" class="col96">kefu@51jijinhui.com</a></div>
+			</div>
+			<div class="footerNav fixed">
+				<ul>
+					<li>
+						<span class="fNavTitle">关于我们</span>
+						<a class="fNavLink" href="about.html">公司介绍</a>
+						<a class="fNavLink" href="culture.html">企业文化</a>
+						<a class="fNavLink" href="aptitude.html">基金从业信息</a>
+						<a class="fNavLink" href="zhizi.html">资质证明</a>
+						<a class="fNavLink" href="contact.html">联系方式</a>
+						<a class="fNavLink" href="recruit.html">诚聘英才</a>
+					</li>
+					<li>
+						<span class="fNavTitle">帮助中心</span>
+						<a class="fNavLink" href="openGuide.html">开户指南</a>
+						<a class="fNavLink" href="jiaoyiGuide.html">交易指南</a>
+						<a class="fNavLink" href="jiaoyiQuota.html">交易限额</a>
+						<a class="fNavLink" href="basis.html">基础知识</a>
+					</li>
+					<li style="width: auto;">
+						<span class="fNavTitle">投资者权益</span>
+						<a class="fNavLink" href="investor.html">投资者权益</a>
+						<a class="fNavLink" href="Anti_money_laundering.html">反洗钱</a>
+						<a class="fNavLink" href="feedback.html">问题反馈</a>
+					</li>
+					<li class="snsWarp">
+						<span class="fNavTitle" style="padding-left: 18px;">关注我们</span>
+						<a class="snsIco snsWX" href="javascript:void(0);">微信<div class="QRcode"><img src="../images/qrcode.jpg"></div></a>
+						<a class="snsIco snsWB" href="http://weibo.com/u/5865542702?refer_flag=1001030101_&is_all=1" target="_blank">新浪微博</a>
+					</li>
+				</ul>
+			</div>
+			<!--footerNav end-->
+		</div>
+		<!--container end-->
+		<div class="copyRight">
+			北京汇成基金销售有限公司版权所有<br />
+			Copyright © 2015-2016 www.fundzone.cn All rights reserved<br />
+			基金销售业务资格证书[000000328]&nbsp; [京ICP备16023498号-1]
+		</div>
+	</footer>	
+</body>
+</html>
+<script type="text/javascript">
+var dates = ['2016-07-01','2016-07-02','2016-07-03','2016-07-04','2016-07-05','2016-07-06','2016-07-07']
+var datas = [-1, 2, 1.5, 4, 5, 3, 2];
+var dom = document.getElementById("chartWarp");
+var domPie = document.getElementById("chartpie");
+var myChart = echarts.init(dom);
+var myChartPie = echarts.init(domPie);
+
+var option = function (dates,datas){
+	return {
+	    tooltip: {
+	        trigger: 'axis'
+	    },
+	    toolbox: {
+	        show: true,
+	        feature: {
+	            magicType: {show: true, type: ['stack', 'tiled']},
+	            saveAsImage: {show: true}
+	        }
+	    },
+	    xAxis: {
+	        type: 'category',
+	        boundaryGap: false,
+	        data: dates
+	    },
+	    yAxis: {
+	        type: 'value',
+	        axisLabel: {
+	                  show: true,
+	                  interval: 'auto',
+	                  formatter: '{value} %'
+	                }
+	    },
+	    series: [{
+	        name: '本基金',
+	        type: 'line',
+	        smooth: true,
+	        data: datas
+	    }]
+    }
+};
+
+
+
+
+//饼图
+var pieOption = {
+		tooltip: {
+	        trigger: 'item',
+	        formatter: '{a} <br/>{b} : {c}'
+	    },
+	    legend: {
+	        orient: 'vertical',
+	        left:165,
+	        top:20,
+	        itemWidth:15,
+	        itemHeight:15,
+	        data:['股票','现金','其他']
+	    },
+		series : [
+			{
+				name:'股票 ',
+				type:'pie',
+				center:[75, '50%'],
+				radius : ['100%', '60%'],
+				hoverAnimation:false,
+				legendHoverLink:false,
+				itemStyle : {
+					normal : {
+						label : {
+							show : false
+						},
+						labelLine : {
+							show : false
+						}
+					},
+					emphasis : {
+						label : {
+							show : false,
+							position : 'center',
+							textStyle : {
+								fontSize : '30',
+								fontWeight : 'bold'
+							}
+						}
+					}
+				},
+				data:[
+					{
+						itemStyle:{
+							normal:{color:'#8564ab'}
+						},
+						value:1, 
+						name:'股票'
+					},
+					{
+						itemStyle:{
+							normal:{color:'#ae98c7'}
+						},
+						value:1, 
+						name:'现金'
+					},
+					{
+						itemStyle:{
+							normal:{color:'#d6cbe3'}
+						},
+						value:1, 
+						name:'其他'
+					}
+				]
+			}
+		]
+}
+
+
+
+$(document).ready(function(){
+	myChartPie.setOption(pieOption);
+	myChart.setOption(option(dates,datas), true);
+	$(".date").on("click",function(){
+		$(this).addClass("cur").parent().siblings().children(".date").removeClass("cur");
+		if($(this).hasClass("oneMonth")){
+			dates = ['2016-07-01','2016-07-02','2016-07-03','2016-07-04','2016-07-05','2016-07-06','2016-07-07'];
+			datas = [-1, 2, 1.5, 4, 5, 3, 2];
+			myChart.setOption(option(dates,datas), true);
+		}else if($(this).hasClass("thrMonth")){
+			dates = ['2016-08-01','2016-07-02','2016-07-03','2016-07-04','2016-07-05','2016-07-06','2016-07-07'];
+			datas = [-3, 2, 1.5, 4, 5, 3, 2];
+//			myChart.setOption(option, true);
+			myChart.setOption(option(dates,datas), true);
+		};
+	});
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
