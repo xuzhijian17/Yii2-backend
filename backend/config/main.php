@@ -17,10 +17,12 @@ return [
             'class' => 'yii\redis\Cache',  //使用redis来保存缓存
             'redis' => 'redis',
         ],
+		/*
         'session' => [
             'class' => 'yii\web\CacheSession',  //使用Cache组件来保存session
             'timeout'=>3600,
         ],
+		*/
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'enableCookieValidation' => true,   // 是否开启cookie验证，如果开启则需要配置cookieValidationKey
